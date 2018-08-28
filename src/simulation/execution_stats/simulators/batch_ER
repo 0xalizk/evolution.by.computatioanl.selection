@@ -1,0 +1,48 @@
+echo 1
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_both_reverse.params
+echo 2
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_reverse.params
+echo 3
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_both_reverse.params
+echo 4
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_both_reverse.params
+echo 5
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_source_reverse.params
+echo 6
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_source_reverse.params
+echo 7
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_source_reverse.params
+echo 8
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_source_reverse.params
+echo 9
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_target_reverse.params
+echo 10
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_target_reverse.params
+echo 11
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_target_reverse.params
+echo 12
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_target_reverse.params
+echo 13
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_both_scramble.params
+echo 14
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_scramble.params
+echo 15
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_both_scramble.params
+echo 16
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_both_scramble.params
+echo 17
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_source_scramble.params
+echo 18
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_source_scramble.params
+echo 19
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_source_scramble.params
+echo 20
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_source_scramble.params
+echo 21
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nb_alpha0.2_minknap_execstats_4X_target_scramble.params
+echo 22
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_target_scramble.params
+echo 23
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eb_alpha0.2_minknap_execstats_4X_target_scramble.params
+echo 24
+python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/ER_Vinayagam/ER_Vinayagam_rupert_ER_Vinayagam_v4eu_alpha0.2_minknap_execstats_4X_target_scramble.params
