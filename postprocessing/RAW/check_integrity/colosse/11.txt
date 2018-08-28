@@ -1,0 +1,163 @@
+
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3492
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3399
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1312
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1315
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3522
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3395
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1236
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t0.1_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1275
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3476
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3481
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1303
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1339
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3478
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3457
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1340
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t1.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1261
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3359
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3496
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1279
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1274
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3474
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3465
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1271
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t5.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1284
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3435
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3411
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1302
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1187
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3445
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3433
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1247
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t10.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1321
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3440
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3465
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1327
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1309
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3456
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3394
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1270
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t15.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1289
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3477
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3482
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1363
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1293
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3467
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3351
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1347
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t20.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1253
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3478
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3450
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1373
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1348
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3445
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3374
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1340
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t25.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1239
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3465
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3448
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1314
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1305
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3476
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3447
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1234
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t50.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1247
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3502
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3327
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1338
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1276
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3394
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3460
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1288
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t75.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1271
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h09m40s37.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3459
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h04m36s56.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3460
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_DP_SOLVER_4X_SOURCE_REVERSE_June-03-2016-h10m16s03.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1337
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_MINKNAP_4X_SOURCE_REVERSE_June-01-2016-h05m34s08.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1323
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h09m58s05.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3457
+diagnosing /rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h16m18s39.csv
+	len(df)%5 == 0: yes         	instances 11842.0	nils      3413
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_DP_solver_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_DP_SOLVER_4X_SOURCE_SCRAMBLE_June-03-2016-h10m47s31.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1238
+diagnosing /rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_source_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p0.1_t100.0_V3_MINKNAP_4X_SOURCE_SCRAMBLE_June-01-2016-h05m52s17.csv
+	len(df)%5 == 0: yes         	instances 11651.0	nils      1318
+
+Done .. see: problematic_files.log (0 bad files)

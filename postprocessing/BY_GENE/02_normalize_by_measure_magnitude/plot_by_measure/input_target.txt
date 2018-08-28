@@ -1,0 +1,4 @@
+/rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_target_reverse/01_resilience_simulation/data_points/Suratanee_BY_GENE_datapoints_V3_MINKNAP_4X_TARGET_REVERSE_May-23-2016-h13m12s41.csv
+/rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_target_scramble/01_resilience_simulation/data_points/Suratanee_BY_GENE_datapoints_V3_MINKNAP_4X_TARGET_SCRAMBLE_May-23-2016-h13m20s17.csv
+/rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_target_reverse/01_resilience_simulation/data_points/ER_Suratanee_BY_GENE_datapoints_V3_MINKNAP_4X_TARGET_REVERSE_May-23-2016-h15m06s24.csv
+/rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_target_scramble/01_resilience_simulation/data_points/ER_Suratanee_BY_GENE_datapoints_V3_MINKNAP_4X_TARGET_SCRAMBLE_May-23-2016-h15m12s46.csv

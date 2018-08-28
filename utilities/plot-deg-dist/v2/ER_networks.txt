@@ -1,0 +1,8 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/IntAct/ER_IntAct/wrong-prob/input/ER_IntAct.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/ER_Suratanee/input/ER_Suratanee.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinagayam/ER_Vinagayam/input/ER_Vinagayam.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Neural/ER_Neural/input/ER_Neural.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Social/ER_Social/input/ER_Social_sampled.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/SF/ER_SF/input/ER_SF.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/BA/ER_BA/input/ER_BA.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Complete/ER_Complete/input/ER_Complete.txt

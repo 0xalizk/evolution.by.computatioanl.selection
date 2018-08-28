@@ -1,0 +1,4 @@
+#!/bin/bash
+qstat -u mosha
+echo ""
+python $util/check_jobs/jobs.py

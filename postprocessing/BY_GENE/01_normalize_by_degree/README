@@ -1,0 +1,1 @@
+It doesn't make sense to use these plots on SCRAMBLE data, i.e. if the reduction mode in the simulation is "scramble", there is no longer a concept of "degree"

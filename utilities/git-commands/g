@@ -1,0 +1,3 @@
+echo ""
+echo "guillimin:"
+ssh mosha@guillimin.hpc.mcgill.ca "pull"

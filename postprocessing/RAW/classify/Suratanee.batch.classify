@@ -1,0 +1,16 @@
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/RD_Suratanee.V4EB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/RD_Suratanee.V4EU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/RD_Suratanee.V4NB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/RD_Suratanee.V4NU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/Suratanee.V4EB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/Suratanee.V4EU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/Suratanee.V4NB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/Suratanee.V4NU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/UR_Suratanee.V4EB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/UR_Suratanee.V4EU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/UR_Suratanee.V4NB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/UR_Suratanee.V4NU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/US_Suratanee.V4EB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/US_Suratanee.V4EU.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/US_Suratanee.V4NB.t005.0.csv.collect
+python pair_em_up_by_pressure_value_combine_modes.py Suratanee/US_Suratanee.V4NU.t005.0.csv.collect

@@ -1,0 +1,2 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/IntAct/AP_IntAct/input/AP_IntAct.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/IntAct/AN_IntAct/input/AN_IntAct.txt

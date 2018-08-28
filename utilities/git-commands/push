@@ -1,0 +1,2 @@
+cd $root
+git push origin master > ~/git-push.log

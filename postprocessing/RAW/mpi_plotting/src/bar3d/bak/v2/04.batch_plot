@@ -1,0 +1,5 @@
+bash 03.organize.batch /rap/ymj-002-aa/mosha/plotting/bar3d/v2/Perrimon/ER_Perrimon/bar3d_ER_Perrimon_BoSoTa.params/master_dump
+bash 03.organize.batch /rap/ymj-002-aa/mosha/plotting/bar3d/v2/Perrimon/Perrimon/bar3d_Perrimon_BoSoTa.params/master_dump
+bash 03.organize.batch /rap/ymj-002-aa/mosha/plotting/bar3d/v2/Perrimon/RD_Perrimon/bar3d_RD_Perrimon_BoSoTa.params/master_dump
+bash 03.organize.batch /rap/ymj-002-aa/mosha/plotting/bar3d/v2/Perrimon/UR_Perrimon/bar3d_UR_Perrimon_BoSoTa.params/master_dump
+bash 03.organize.batch /rap/ymj-002-aa/mosha/plotting/bar3d/v2/Perrimon/US_Perrimon/bar3d_US_Perrimon_BoSoTa.params/master_dump

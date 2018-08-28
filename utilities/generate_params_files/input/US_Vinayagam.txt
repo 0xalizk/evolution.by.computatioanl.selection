@@ -1,0 +1,1 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/US_Vinayagam/input/US_Vinayagam.txt

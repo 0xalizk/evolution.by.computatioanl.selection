@@ -1,0 +1,3 @@
+echo ""
+echo "rupert"
+ssh malsha17@yamaska.cs.mcgill.ca "pull"

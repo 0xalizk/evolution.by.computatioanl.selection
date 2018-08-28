@@ -1,0 +1,202 @@
+import matplotlib as mpl
+mpl.use('Agg')
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+from matplotlib import rcParams
+#import seaborn as sns
+import os,sys
+
+pd.set_option('display.precision', 3)
+params    = (open (str(sys.argv[1]),'r')).readlines()
+data_file = (str(params[0].split('=')[1])).strip()
+#zlim      = int((params[1].split('=')[1]).strip())
+
+rcParams['axes.labelsize'] = 12
+rcParams['axes.titlesize'] = 60
+rcParams['xtick.labelsize'] = 12
+rcParams['ytick.labelsize'] = 12
+#rcParams['legend.fontsize'] = 14
+#rcParams['font.family'] = 'serif'
+rcParams['font.serif'] = ['Utopia']
+rcParams['grid.alpha'] = 0.1
+rcParams['axes.grid']=False
+rcParams['ytick.minor.pad']=0.01
+rcParams['ytick.major.pad']=0.01
+rcParams['savefig.pad_inches']=.01
+rcParams['grid.color']='white'
+#rcParams['axes.labelpad ']=1
+
+plots = {
+         'Bin':           {'color':'green', 'measure_column':'Bin_avg',        'Z_label':'Benefits (knapsack value)', 'location':521},
+         'Din':           {'color':'red',   'measure_column':'Din_avg',        'Z_label':'Damages (knapsack weight)', 'location':522},
+         'Bout':          {'color':'red',   'measure_column':'Bout_avg',       'Z_label':'Bout',                      'location':523},
+         'Dout':          {'color':'green', 'measure_column':'Dout_avg',       'Z_label':'Dout',                      'location':524},
+         'Bin_over_Din':  {'color':'green', 'measure_column':'Bin_over_Din',   'Z_label':'Bin_over_Din',              'location':525},
+         'Bin_over_Bout': {'color':'green', 'measure_column':'Bin_over_Bout',  'Z_label':'Bin_over_Bout',             'location':526},
+         'Dout_over_Din': {'color':'green', 'measure_column':'Dout_over_Din',  'Z_label':'Dout_over_Din',             'location':527},
+         'Bout_over_Dout':{'color':'green', 'measure_column':'Bout_over_Dout', 'Z_label':'Bout_over_Dout',            'location':528},
+         'Bout_over_Bin': {'color':'red',   'measure_column':'Bout_over_Bin',  'Z_label':'Bout_over_Bin',             'location':529}
+        }
+
+
+df                  = pd.read_csv(data_file,header=0,delimiter='\t', dtype={'Gene':str,
+                                                                            'p':float,
+                                                                            't':float,
+                                                                            'degree':float,
+                                                                            'in-degree':float,
+                                                                            'out-degree':float,
+                                                                            'Bin_avg':float,
+                                                                            'Bin_std':float,
+                                                                            'Din_avg':float,
+                                                                            'Din_std':float,
+                                                                            'Bout_avg':float,
+                                                                            'Bout_std':float,
+                                                                            'Dout_avg':float,
+                                                                            'Dout_std':float,
+                                                                            'Bin_over_Din':float,
+                                                                            'Bin_over_Bout':float,
+                                                                            'Bin_over_Dout':float,
+                                                                            'Din_over_Bin':float,
+                                                                            'Din_over_Bout':float,
+                                                                            'Din_over_Dout':float,
+                                                                            'Bout_over_Bin':float,
+                                                                            'Bout_over_Din':float,
+                                                                            'Bout_over_Dout':float,
+                                                                            'Dout_over_Bin':float,
+                                                                            'Dout_over_Din':float,
+                                                                            'Dout_over_Bout':float
+                                                                            })
+
+bins                = [0,5, 10,15,20,25, df['degree'].max()+1] 
+labels              = ['ZeroFive', 'SixTen', 'ElevenFifteen', 'SixteenTwinty', 'TwintyoneTwintyfive', 'AboveTwintyFive']
+
+colors = {'green':['#003300', '#006600', '#009900', '#00cc00', '#00ff00', '#99ff99'], 'red':['#003300', '#006600', '#009900', '#00cc00', '#00ff00', '#99ff99'],
+          'red':['#330000', '#800000', '#b30000', '#ff0000', '#ff4d4d', '#ff9999']}
+
+fig = plt.figure(figsize=(30, 70))
+fig.subplots_adjust(hspace = .01, wspace=.01)
+grouped = df.groupby(['p', 't']).sum().reset_index()
+zlim = max (grouped['Bin_avg'].max(), grouped['Din_avg'].max(), grouped['Bout_avg'].max(), grouped['Dout_avg'].max())
+
+for measure in plots.keys():
+    i=0
+    sizes =[]
+    ax = fig.add_subplot(plots[measure]['location'], projection='3d')
+    dx = [0.5]*(100)	#bar width
+    dy = [0.5]*(100)    #bar length
+    
+    
+    
+   
+
+    #print (dx)
+    #dx, dy = np.meshgrid(dx, dy)    
+    
+    
+    
+    
+    ax.set_title(measure)
+    #xticks = [0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5]
+    #yticks = [9.5, 8.5, 7.5, 6.5, 5.5, 4.5, 3.5, 2.5, 1.5, 0.5]
+    xticks = range(0,10, 1)
+    yticks = range(10,0,-1)
+    
+    #xticks = [1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5]
+    #yticks = [10.5, 9.5, 8.5, 7.5, 6.5, 5.5, 4.5, 3.5, 2.5, 1.5]
+    
+
+    ax.set_xticks(xticks)
+    ax.set_yticks(yticks)
+
+    xlabels = ['0.1','1','5','10','15','20','25','50','75','100']
+    ylabels = ['100','75','50','25','20','15','10','5','1','0.1']   
+    ax.w_xaxis.set_ticklabels(xlabels)
+    ax.w_yaxis.set_ticklabels(ylabels)
+    ax.set_xlabel('Tolerance (% edges)')
+    ax.set_ylabel('Pressure (% nodes)')
+    ax.set_zlabel(plots[measure]['Z_label'])
+    ax.set_zlim(top=zlim)
+    ax.view_init(elev=16,azim=305)
+        
+    print (measure)
+   
+    z_offset = [0.0]* len (set(df['p'].tolist())) * len (set(df['p'].tolist()))
+    
+    for deg_range in labels:
+        current_slice = df[         (df['degree'] >= bins[i])   &    (df['degree'] < bins[i+1])    ]  
+        sizes.append(current_slice['degree'].count())
+        
+        current_slice = current_slice.groupby(['p', 't']).sum().reset_index()
+        current_slice.to_csv("slices/"+deg_range+".csv", sep='\t', float_format='%.3f')
+        zdata  = current_slice[plots[measure]['measure_column']].tolist()
+
+        #print ("zdata   [0:5] "+ str(zdata[0:5]))
+        #print ("z_offset[0:5] "+ str(z_offset[0:5]))
+        
+        zdata         = (np.array(zdata)).reshape(10, 10)			#z
+        
+        #Ts, Ps        = Ts+0.125, Ps+0.125
+        #print ("Ts ", Ts)
+        
+        #print ("Ps ", Ps)
+        Ts, Ps = np.meshgrid (np.arange(zdata.shape[0]), np.arange(zdata.shape[1]) )
+        #print ("0: "+str(np.arange(zdata.shape[0])) +"\n1: "+str(np.arange(zdata.shape[1])))
+        zdata, Ps, Ts = zdata.flatten(), Ps.flatten(), Ts.flatten()
+        #print ("Ts ", Ts)   
+        #print ("Ps ", Ps)
+ 
+        ax.bar3d (Ts, Ps, z_offset, dx, dy, zdata ,alpha=1,color=colors[plots[measure]['color']][i], edgecolor='')
+        
+        #ax.bar3d (Ts, Ps, z_offset, dx, dy, zdata ,alpha=1,color=np.array([colors[plots[measure]['color']][i]]*6*len(zdata)), edgecolor='')
+
+        z_offset = [a+b for a,b in zip(z_offset, zdata)]
+        
+        i+=1
+
+print("sizes:")
+for s in sizes:
+    print (s)
+
+
+plt.savefig((data_file.split('/')[-1])[0:-4]+".png")
+
+#print ("zlim "+str(zlim))
+#print ("bins"+str(bins))
+#print ("max degree: "+str(df['degree'].max()))
+#print (df.dtypes)
+#print ("degrees: "+str(set(df['degree'].tolist())))
+
+#current_slice2.to_csv("slices/"+deg_range+".csv", sep='\t', float_format='%.3f')
+#current_slice = pd.DataFrame (current_slice2.groupby(['p', 't']).sum().reset_index())       
+
+
+#determine zlim
+#grouped = pd.DataFrame (df.groupby(['p', 't']).sum().reset_index())
+#grouped.to_csv('grouped.csv', sep='\t', float_format='%.3f')
+
+
+#df['degree_ranges'] = pd.cut(df['degree'], bins, labels=labels, include_lowest=True)
+
+#df['degree_ranges'] = df['degree_ranges'].astype('str')
+#df.to_string(columns=['degree_ranges'])
+
+
+#p = sorted(set(df['p'].tolist()))
+#t = sorted(set(df['t'].tolist()))
+#print ("P "+str(p))
+#print ("T "+str(t))
+
+
+#x = pd.DataFrame(df[(df['degree'] >=0) & (df['degree']<=5) & (df['p']==0.1) & (df['t']==0.1)])
+#y = x['Bin_avg'].sum()
+#print (str(y))
+
+#x.to_csv ('x.csv', sep='\t', float_format='%.3f')
+#grouped = df.groupby(['p', 't', 'degree_ranges']).sum().reset_index()
+#aggregated_df = pd.DataFrame(grouped)
+#aggregated_df.to_csv("aggregated_df.csv", sep='\t', float_format='%.3f')
+
+
+#aggregated_df = pd.DataFrame({'p':grouped['p'], 't':grouped['t'], 'degree_ranges':grouped['degree_ranges'], 'Bin_avg':grouped['Bin_avg']}) 

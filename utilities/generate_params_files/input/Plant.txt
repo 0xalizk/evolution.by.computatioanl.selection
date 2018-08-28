@@ -1,0 +1,4 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Plant/Plant/input/Plant.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Plant/Plant/input/NH_Plant.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Plant/Plant/input/NL_Plant.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Plant/Plant/input/RN_Plant.txt

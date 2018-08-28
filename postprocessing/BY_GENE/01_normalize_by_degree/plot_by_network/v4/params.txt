@@ -1,0 +1,11 @@
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Suratanee/Suratanee/output/01_resilience_simulation/data_points/Suratanee_BY_GENE_datapoints_March-07-2016-h02m51s48.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Suratanee/ER_Suratanee/output/01_resilience_simulation/data_points/ER_Suratanee_BY_GENE_datapoints_March-09-2016-h05m12s57.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Vinagayam/Vinagayam/output/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_February-21-2016-h05m56s34.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Vinagayam/ER_Vinagayam_loose/output/01_resilience_simulation/data_points/ER_Vinagayam_loose_BY_GENE_datapoints_February-28-2016-h07m13s17.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Vinagayam/ER_Vinagayam_dense/output/01_resilience_simulation/data_points/ER_Vinagayam_dense_BY_GENE_datapoints_March-01-2016-h21m35s37.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Vinagayam/ER_Vinagayam/output/01_resilience_simulation/data_points/ER_Vinagayam_BY_GENE_datapoints_February-28-2016-h07m54s02.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Neural/Neural/output/01_resilience_simulation/data_points/Neural_BY_GENE_datapoints_March-07-2016-h02m51s48.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Neural/ER_Neural/output/01_resilience_simulation/data_points/ER_Neural_BY_GENE_datapoints_March-09-2016-h05m08s35.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/IntAct/IntAct/output/01_resilience_simulation/data_points/IntAct_BY_GENE_datapoints_March-09-2016-h00m53s07.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/IntAct/ER_IntAct/output/01_resilience_simulation/data_points/ER_IntAct_BY_GENE_datapoints_March-09-2016-h00m57s15.csv
+/gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/Social/output/01_resilience_simulation/data_points/Social_sampled_BY_GENE_datapoints_March-09-2016-h03m05s48.csv
