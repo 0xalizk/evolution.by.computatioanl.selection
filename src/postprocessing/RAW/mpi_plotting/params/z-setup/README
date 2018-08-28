@@ -1,0 +1,4 @@
+(1) Use duplicate.py to create parameter files from a previous network. These files will be missing 'input_files' and 'stamps'
+(2) Use $post/RAW/classify/pair_em_up_by_pressure_value_combine_modes.py  to get 'input_files' and corresponding0 'stamps'
+(3) Use append.py to append 'input_files' and 'stamps' into the corresponding  params file from (1)
+(4) Use z-batch.submit to submit jobs

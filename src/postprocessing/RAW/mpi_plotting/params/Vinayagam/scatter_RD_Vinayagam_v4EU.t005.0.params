@@ -1,0 +1,19 @@
+input_files                    = /home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p020.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p000.1.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p001.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p005.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p050.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p025.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p015.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p075.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p010.0.txt,/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_RD_Vinayagam_V4EU.t005.0_p100.0.txt
+stamps                         = RD_Vinayagam_V4EU.t005.0_p020.0,RD_Vinayagam_V4EU.t005.0_p000.1,RD_Vinayagam_V4EU.t005.0_p001.0,RD_Vinayagam_V4EU.t005.0_p005.0,RD_Vinayagam_V4EU.t005.0_p050.0,RD_Vinayagam_V4EU.t005.0_p025.0,RD_Vinayagam_V4EU.t005.0_p015.0,RD_Vinayagam_V4EU.t005.0_p075.0,RD_Vinayagam_V4EU.t005.0_p010.0,RD_Vinayagam_V4EU.t005.0_p100.0
+columns                        = 2
+file_extension                 = png
+output_dir                     = /rap/ymj-002-aa/mosha/plotting/scatter/Vinayagam/RD_Vinayagam
+PLOTTING_ROOT_SCRIPT           = /home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/mpi_plotting/src/scatter/root_scatter.py
+walltime                       = 30
+xlim                           = 55
+ylim                           = 55
+dpi                            = 300
+jobname                        = scat_RDV_EU
+
+
+# this line is a comment, comments must be on separate lines
+# 'input_files'      there will be 1 figure per each input file
+# 'columns'          used by master to determine figure dimensions
+# 'files_per_pair'   used by master.py to determine how many files to to send to a worker, and by launcher.py to determine #                     the number of workers Pairing is useful is you want worker to impose xlim/ylim per pair for example
+# 'walltime'         optional, default = max (30, min(90, num_workers * 3))
+# 'xlim','ylim'      optional (not applicable in wheel/bar3d). If not provided, these lims will be pair-specific

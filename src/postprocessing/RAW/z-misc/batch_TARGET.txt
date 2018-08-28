@@ -1,0 +1,10 @@
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p000.1.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p001.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p005.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p010.0.txt & 
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p015.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p020.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p025.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p050.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p075.0.txt &
+nohup python3 plot_in_pairs.py /sb/home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/RAW/input/INPUT_TARGET_p100.0.txt &

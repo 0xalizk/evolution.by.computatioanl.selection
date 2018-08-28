@@ -1,0 +1,2 @@
+PPI /home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/deg_dist/as_histogram/in_pairs/edge_files/Vinayagam.txt 
+ER_PPI /home/mosha/EvoByCompSel/parallel/Release-03/src/postprocessing/deg_dist/as_histogram/in_pairs/edge_files/ER_Vinayagam.txt 

@@ -1,0 +1,69 @@
+reduction_mode 			2X (reverse, scramble):					
+	advice_upon 		2X (node,edge):					2 defs		
+		biased 			2X (True,False):				  
+			calculator  3X (both, source, target)		6 defs
+		
+
+configs['advice_upon'] = node/edge
+configs['biased']      = True/False
+time BDT_calculator 		http://www.marinamele.com/7-tips-to-time-python-scripts-and-control-memory-and-cpu-usage
+							https://www.huyng.com/posts/python-performance-analysis
+
+reverse/scramble_reduction(M, pressure_%, tolerance_%, sampling_threshold, advice_upon, biased, BD_criteria):
+    if-else on advice_upon							nodes/edges
+        yield [BDT_calculator_nodes (M, util.advice_nodes(util.sample_nodes(M.nodes(),pressure_%), biased), tolerance_%, BD_criteria)]
+            or
+        yield [BDT_calculator_edges (M, util.advice_edges(util.sample_edges(M.edges(),pressure_%), biased), tolerance_%, BD_criteria)]
+
+new:
+	util.advice_edges
+	util.sample_edges
+	BDT_calculator_edges
+	
+
+
+3X both, source, reverse	(handled in BDT_caclulator_xxxx)
+2X reverse/scramble 		(handled by reverse/scramble functions)
+2X node/edge advice			(handled in reverse/scramble)		
+2X biased/unbiased oracle	(handled in reverse/scramble)
+2X V/S						
+2X ER_V/ER_S
+---------------
+96 total jobs
+
+
+
+
+v4nu	node/unbiased		advice_nodes (biased=False)
+v4nb	node/biased			advice_nodes (biased=True)
+v4eu	edge/unbiased		advice_edges (biased=False)
+v4eb	edge/biased			advice_edges (biased=True)
+
+def advice_nodes               (biased=True/False)
+def advice_edges               (biased=True/False)
+def BD_calculator_both_edges   ()
+def BD_calculator_source_edges ()
+def BD_calculator_target_edges ()
+
+
+in v3mpi, rename 'resilience', 'efficiency' to 'averages', 'raw' respectively, and change env. variables accordingly
+
+in v4:
+	only raw implemented, forked from v3's 'efficiency'
+
+advice node-unbiased:
+	done
+
+advice node-biased:
+
+advice edge-unbiased:
+	sample p edges
+	flip on each edge
+	for edge in flip:
+		done
+advice edge-biased:
+	sample p edges
+	for edge in sample:
+		source_degree = M.out_degree (edge[0])
+		
+

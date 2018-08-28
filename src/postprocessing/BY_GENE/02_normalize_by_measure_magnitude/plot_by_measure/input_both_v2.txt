@@ -1,0 +1,2 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/Suratanee/output/v2/v2_minknap_both/01_resilience_simulation/data_points/Suratanee_BY_GENE_datapoints_V2_MINKNAP_BOTH_April-28-2016-h08m01s48.csv
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/ER_Suratanee/output/v2/v2_minknap_both/01_resilience_simulation/data_points/ER_Suratanee_BY_GENE_datapoints_V2_MINKNAP_BOTH_April-29-2016-h01m21s12.csv
