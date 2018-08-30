@@ -1,0 +1,4 @@
+cp the ttf file to ~/.fonts/
+remove matplotlib cache: rm ~/.cache/matplotlib/*
+
+now matplotlib should find the new font
