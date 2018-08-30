@@ -1,3 +1,0 @@
-echo ""
-echo "Graham"
-ssh mosha@graham.computecanada.ca "pull"

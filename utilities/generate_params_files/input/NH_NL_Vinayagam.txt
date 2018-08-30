@@ -1,3 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/NH_Vinayagam/input/NH_Vinayagam.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/NL_Vinayagam/input/NL_Vinayagam.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/RN_Vinayagam/input/RN_Vinayagam.txt

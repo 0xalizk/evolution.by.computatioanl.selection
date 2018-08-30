@@ -1,1 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/ER_Suratanee/input/ER_Suratanee.txt

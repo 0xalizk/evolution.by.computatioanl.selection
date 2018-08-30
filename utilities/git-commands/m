@@ -1,3 +1,0 @@
-echo ""
-echo "mammoth"
-ssh mosha@jeromew-mp2.ccs.usherbrooke.ca "pull"

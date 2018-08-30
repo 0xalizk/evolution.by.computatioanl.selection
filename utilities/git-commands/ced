@@ -1,3 +1,0 @@
-echo ""
-echo "Cedar"
-ssh mosha@cedar.computecanada.ca "pull"

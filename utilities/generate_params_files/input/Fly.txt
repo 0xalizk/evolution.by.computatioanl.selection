@@ -1,4 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/NETWORKS/Fly/PPI/input/Fly-PPI.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/NETWORKS/Fly/PPI/input/NH_Fly-PPI.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/NETWORKS/Fly/PPI/input/NL_Fly-PPI.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/NETWORKS/Fly/PPI/input/RN_Fly-PPI.txt

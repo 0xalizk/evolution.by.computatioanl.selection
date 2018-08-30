@@ -1,4 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Worm/Worm/input/Worm.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Worm/Worm/input/NH_Worm.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Worm/Worm/input/NL_Worm.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Worm/Worm/input/RN_Worm.txt

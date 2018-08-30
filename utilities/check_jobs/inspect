@@ -1,3 +1,0 @@
-#!/bin/bash
-echo ""
-python $util/check_jobs/inspect.py $1

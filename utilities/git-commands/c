@@ -1,3 +1,0 @@
-echo ""
-echo "colosse"
-ssh mosha@colosse.calculquebec.ca "pull"

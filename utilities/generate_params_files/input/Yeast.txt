@@ -1,4 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Yeast/Yeast/input/Yeast.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Yeast/Yeast/input/NH_Yeast.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Yeast/Yeast/input/NL_Yeast.txt
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Yeast/Yeast/input/RN_Yeast.txt

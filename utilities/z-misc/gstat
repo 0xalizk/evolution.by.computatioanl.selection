@@ -1,5 +1,0 @@
-#!/bin/bash
-source=$PWD
-cd $root
-git status 
-cd $source

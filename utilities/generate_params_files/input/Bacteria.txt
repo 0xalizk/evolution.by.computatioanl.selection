@@ -1,4 +1,0 @@
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Bacteria/Bacteria/input/Bacteria.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Bacteria/Bacteria/input/NH_Bacteria.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Bacteria/Bacteria/input/NL_Bacteria.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Bacteria/Bacteria/input/RN_Bacteria.txt

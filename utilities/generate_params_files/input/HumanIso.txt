@@ -1,4 +1,0 @@
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/HumanIso/HumanIso/input/HumanIso.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/HumanIso/HumanIso/input/NH_HumanIso.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/HumanIso/HumanIso/input/NL_HumanIso.txt
-/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/HumanIso/HumanIso/input/RN_HumanIso.txt

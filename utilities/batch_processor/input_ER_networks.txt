@@ -1,5 +1,0 @@
-python3 /home/mosha/EvoByCompSel/parallel/Release-03/src/utilities/ER_network_generator/ER_generator.py 1779 3272 ER_IntAct.txt
-python3 /home/mosha/EvoByCompSel/parallel/Release-03/src/utilities/ER_network_generator/ER_generator.py 967 1954 ER_Suratanee.txt
-python3 /home/mosha/EvoByCompSel/parallel/Release-03/src/utilities/ER_network_generator/ER_generator.py 3352 6094 ER_Vinagayam.txt
-python3 /home/mosha/EvoByCompSel/parallel/Release-03/src/utilities/ER_network_generator/ER_generator.py 305 2358 ER_Neural.txt
-python3 /home/mosha/EvoByCompSel/parallel/Release-03/src/utilities/ER_network_generator/ER_generator.py 8090 19403 ER_Social_sampled.txt

@@ -1,3 +1,0 @@
-echo 'running python3 run_jobs.py'
-cd $util/run_jobs
-python3 run_jobs.py $1

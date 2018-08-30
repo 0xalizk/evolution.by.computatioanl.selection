@@ -1,1 +1,0 @@
-ssh mosha@jeromew-mp2.ccs.usherbrooke.ca  "nohup run_jobs"

@@ -1,3 +1,0 @@
-cd $root
-#git pull --rebase origin master > ~/git-pull.log
-git pull 
