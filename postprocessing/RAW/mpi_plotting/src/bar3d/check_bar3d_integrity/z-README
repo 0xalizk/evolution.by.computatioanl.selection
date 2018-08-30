@@ -1,4 +1,0 @@
-1) collectd /rap/ymj-002-aa/mosha/plotting/bar3d/b4_slices/v2/Vinayagam/Vinayagam/ master_dump > check_masterdumps.collect 
-2) collect /rap/ymj-002-aa/mosha/Vinayagam/Vinayagam RAW csv > check_raw_csv.collect
-3) nohup python root.py > root.out &
-4) python analyze.py root.txt

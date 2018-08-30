@@ -1,3 +1,0 @@
-collect $scratch/dir/to/bar3d > 01.collect
-python append.py
-source 04.batch_plot

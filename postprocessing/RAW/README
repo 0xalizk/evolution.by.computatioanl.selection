@@ -1,3 +1,0 @@
-(1) collect $scratch V4NB 4X SOURCE csv >  V4NB_4X_SOURCE_csv.collect 
-(2) python3 pair_em_up_by_pressure_value.py V4NB_4X_SOURCE_csv.collect
-(3) python3 plot_in_pairs input/INPUT_xxxx.txt  V4NB_4X_SOURCE_csv 

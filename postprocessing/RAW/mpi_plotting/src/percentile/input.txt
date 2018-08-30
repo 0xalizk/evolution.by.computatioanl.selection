@@ -1,2 +1,0 @@
-/rap/ymj-002-aa/mosha/Vinayagam/Vinayagam/v4_alpha0.2/v4nu_minknap_4X_both_reverse/02_raw_instances_simulation/data_points/Vinayagam_RAW_INSTANCES_p100.0_t000.1_V4NU_MINKNAP_4X_BOTH_REVERSE_alpha0.2.October-12-2016-h14m26s11.csv
-/rap/ymj-002-aa/mosha/Vinayagam/ER_Vinayagam/v4_alpha0.2/v4nu_minknap_4X_both_reverse/02_raw_instances_simulation/data_points/ER_Vinayagam_RAW_INSTANCES_p100.0_t000.1_V4NU_MINKNAP_4X_BOTH_REVERSE_alpha0.2.October-05-2016-h16m05s37.csv

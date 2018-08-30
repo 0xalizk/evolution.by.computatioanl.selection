@@ -1,4 +1,0 @@
-python root.py /home/mcb/malsha17/EvoByCompSel/scratch/plotting/ETX/params/DRIVER_cruncher1.params > 1.out
-python root.py /home/mcb/malsha17/EvoByCompSel/scratch/plotting/ETX/params/DRIVER_cruncher2.params > 2.out
-python root.py /home/mcb/malsha17/EvoByCompSel/scratch/plotting/ETX/params/DRIVER_cruncher3.params > 3.out
-python root.py /home/mcb/malsha17/EvoByCompSel/scratch/plotting/ETX/params/DRIVER_cruncher4.params > 4.out

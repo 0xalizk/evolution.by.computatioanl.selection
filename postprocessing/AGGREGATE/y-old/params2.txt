@@ -1,2 +1,0 @@
-data_file      = /gs/project/ymj-002-aa/shamrani/EvoByCompSel/Release-03/data/ER_Vinagayam/output/01_resilience_simulation/data_points/ER_Vinagayam_AGGREGATE_datapoints_February-28-2016-h07m54s02.csv 
-zlim           = 6000 

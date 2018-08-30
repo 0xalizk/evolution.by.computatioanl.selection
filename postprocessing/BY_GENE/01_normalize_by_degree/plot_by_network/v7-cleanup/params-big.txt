@@ -1,7 +1,0 @@
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_source/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_V2_MINKNAP_SOURCE_April-26-2016-h06m43s28.csv
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_source_sim_threshold_2000/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_SOURCE_MINKNAP_April-19-2016-h03m08s24.csv
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_target/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_V2_MINKNAP_TARGET_April-26-2016-h06m43s54.csv
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_target_sim_threshold_2000/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_TARGET_MINKNAP_April-19-2016-h03m07s40.csv
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_both/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_V2_MINKNAP_BOTH_April-26-2016-h06m43s15.csv
-/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinayagam/Vinayagam/output/v2_minknap_both_sim_threshold_2000/01_resilience_simulation/data_points/Vinagayam_BY_GENE_datapoints_BOTH_MINKNAP_April-19-2016-h02m58s59.csv
-

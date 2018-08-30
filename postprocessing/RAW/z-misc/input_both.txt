@@ -1,4 +1,0 @@
-/rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_both_reverse/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p50.0_t5.0_V3_MINKNAP_4X_BOTH_REVERSE_June-01-2016-h01m03s47.csv
-/rap/ymj-002-aa/mosha/Suratanee/v3/v3_minknap_4X_both_scramble/02_efficiency_simulation/data_points/Suratanee_RAW_INSTANCES_p50.0_t5.0_V3_MINKNAP_4X_BOTH_SCRAMBLE_June-01-2016-h05m28s03.csv
-/rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_both_reverse/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p50.0_t5.0_V3_MINKNAP_4X_BOTH_REVERSE_June-01-2016-h05m04s59.csv
-/rap/ymj-002-aa/mosha/ER_Suratanee/v3/v3_minknap_4X_both_scramble/02_efficiency_simulation/data_points/ER_Suratanee_RAW_INSTANCES_p50.0_t5.0_V3_MINKNAP_4X_BOTH_SCRAMBLE_June-01-2016-h05m57s12.csv

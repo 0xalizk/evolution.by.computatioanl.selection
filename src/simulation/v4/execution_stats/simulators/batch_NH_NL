@@ -1,8 +1,0 @@
-python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/NH_Vinayagam/NH_Vinayagam_yamaska_NH_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_reverse.params
-echo 1/4
-python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/NH_Vinayagam/NH_Vinayagam_yamaska_NH_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_scramble.params
-echo 2/4
-python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/NL_Vinayagam/NL_Vinayagam_yamaska_NL_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_reverse.params
-echo 3/4
-python /home/mcb/malsha17/EvoByCompSel/parallel/Release-03/src/simulation/v4/execution_stats/simulators/simulator_execstats_mpl.py /home/mcb/malsha17/params/NL_Vinayagam/NL_Vinayagam_yamaska_NL_Vinayagam_v4nu_alpha0.2_minknap_execstats_4X_both_scramble.params
-echo 4/4
