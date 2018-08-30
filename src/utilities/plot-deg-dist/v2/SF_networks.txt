@@ -1,0 +1,8 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/IntAct/IntAct/input/IntAct.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/Suratanee/input/Surantee.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Vinagayam/Vinagayam/input/Vinyagam.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Neural/Neural/input/Neural.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Social/Social/input/Social_sampled.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/SF/input/SF.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/BA/input/BA.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Complete/Complete/using-v2-generator/input/Complete.txt

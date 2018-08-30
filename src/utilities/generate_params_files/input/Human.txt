@@ -1,0 +1,4 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Human/Human/input/Human.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Human/Human/input/NH_Human.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Human/Human/input/NL_Human.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Human/Human/input/RN_Human.txt

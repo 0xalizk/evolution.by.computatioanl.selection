@@ -1,0 +1,1 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/IntAct/ER_IntAct/input/ER_IntAct.txt

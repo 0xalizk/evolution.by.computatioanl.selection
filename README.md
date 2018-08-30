@@ -15,4 +15,4 @@ The principle of "Evolution by Computational Selection" relates to the idea that
 
 ## References:
 
-The literature references for this work are still being considered for publication but can be provided upon request, email: atiia [at] cs [dot] mcgill [dot] ca. 
+The literature references for this work are still being considered for publication but can be provided upon request, email: atiia [at] cs [dot] mcgill [dot] ca.Further documentation can also be found under /doc directory 

@@ -1,0 +1,3 @@
+cd $root
+git add -A > ~/git-add.log 
+git commit -a -m "committing from  "$(hostname -f):"$1" > ~/git-commit.log

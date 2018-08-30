@@ -1,0 +1,1 @@
+ssh mosha@guillimin.hpc.mcgill.ca "nohup run_jobs"

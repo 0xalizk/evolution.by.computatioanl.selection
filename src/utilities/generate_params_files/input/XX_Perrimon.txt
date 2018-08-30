@@ -1,0 +1,5 @@
+# /home/mosha/EvoByCompSel/parallel/Release-03/data/Perrimon/Perrimon/input/Perrimon.txt
+# /home/mosha/EvoByCompSel/parallel/Release-03/data/Perrimon/RD_Perrimon/input/RD_Perrimon.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Perrimon/UR_Perrimon/input/UR_Perrimon.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Perrimon/US_Perrimon/input/US_Perrimon.txt
+# /home/mosha/EvoByCompSel/parallel/Release-03/data/Perrimon/ER_Perrimon/input/ER_Perrimon.txt

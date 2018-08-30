@@ -1,0 +1,3 @@
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/US_Suratanee/input/US_Suratanee.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/UR_Suratanee/input/UR_Suratanee.txt
+/home/mosha/EvoByCompSel/parallel/Release-03/data/Suratanee/RD_Suratanee/input/RD_Suratanee.txt

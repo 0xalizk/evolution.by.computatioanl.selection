@@ -1,0 +1,1 @@
+ssh mosha@colosse.calculquebec.ca "nohup run_jobs"

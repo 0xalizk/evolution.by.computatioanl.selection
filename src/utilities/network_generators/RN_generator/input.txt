@@ -1,0 +1,8 @@
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Bacteria/Bacteria/input/Bacteria.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Human/Human/input/Human.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/HumanIso/HumanIso/input/HumanIso.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Fly/Fly/input/Fly.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Worm/Worm/input/Worm.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Yeast/Yeast/input/Yeast.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/Plant/Plant/input/Plant.txt
+#/home/mcb/malsha17/EvoByCompSel/parallel/Release-03/data/z-archive/Vinayagam/Vinayagam/input/Vinayagam.txt

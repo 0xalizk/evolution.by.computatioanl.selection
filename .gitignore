@@ -1,5 +1,5 @@
 # take a look at https://github.com/github/gitignore/blob/master/Python.gitignore
-note_to_self.txt
+z-misc
 src/simulation/resilience/v3mpi/simulators/__pycache__/**
 src/simulation/resilience/v3mpi/launchers/launcher_v3.log
 src/postprocessing/RAW/*.txt

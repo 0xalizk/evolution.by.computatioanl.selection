@@ -1,0 +1,2 @@
+the resulting graph using networkx's built-in Complete graph generator doesn't result in the expected degree distribution: for n nodes, the in/out degree of each node should be ~n/2 .. but the isn't the case.
+Solution: create undirected Complete graph, then turn it into a directed graph by randomly assigning a direction to each node with a coin flip, as done in the script  undet 'manually' directory
