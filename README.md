@@ -1,10 +1,9 @@
 # Evolution by Computational Selection
 
 This repository contains all the sources code for: 
-
-...1. Running the Network Evolution Problem (NEP) simulations
-...2. Processing visualizing the resulting simulation data
-...3. Running utility scripts such as network stats, generating random analog networks. 
+1. Running the Network Evolution Problem (NEP) simulations
+2. Processing visualizing the resulting simulation data
+3. Running utility scripts such as network stats, generating random analog networks. 
 
 Detailed instruction for 1/2/3 above are included under src/simulation, src/postprocessing and src/utilities.
 
