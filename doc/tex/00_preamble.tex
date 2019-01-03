@@ -1,0 +1,100 @@
+%begin_custom_header
+%\documentclass[12pt]{article}	% RECOMB: "at least 11 point font size on U.S. standard 8 1/2 by 11 inch paper with no less than one inch margin all around."
+\usepackage[utf8]{inputenc}   % umlauts etc.
+\usepackage[english]{babel}
+\usepackage [autostyle]{csquotes}
+\MakeOuterQuote{"}
+\usepackage[hidelinks]{hyperref}%hidelinks disbles ugly colored frames around clickable footnotes/references
+%\addbibresource{/Users/unbaxabl/Downloads/Publishing/z-misc/zotero-library/better_biblatex.bib}
+\newcommand{\harpoon}{\overset{\rightharpoonup}}
+\newtheorem{theorem}{Theorem}
+\usepackage{verbatim} % multiline comment
+
+%============================================================================
+%============================================================================
+\usepackage{graphicx}
+\graphicspath{{/Users/unbaxabl/Downloads/Publishing/Figures/}}
+%\usepackage[fleqn]{amsmath}  % also \documentclass[fleqn]{article}
+%\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts} % for R (real numbers)
+\usepackage{float}
+%\usepackage[font=scriptsize,labelfont=bf]{caption}
+\usepackage{booktabs, cellspace, hhline} % \cellspacetoplim; http://tex.stackexchange.com/questions/302960/modify-arraystretch-for-a-single-row-in-table
+\usepackage[percent]{overpic}
+\usepackage[export]{adjustbox}
+%\usepackage[compact]{titlesec}
+\usepackage{booktabs, cellspace, hhline} %http://tex.stackexchange.com/questions/302960/modify-arraystretch-for-a-single-row-in-table
+\usepackage{pbox}
+\usepackage[table]{xcolor} % for \arrayrulecolor{yellow}, changes hline and vline colors
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type KKK
+\usepackage{lmodern}
+\usepackage{amssymb}%for QED symbol \blacksquare
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xr}
+\externaldocument[I-]{../sup/.build/combined}%https://tex.stackexchange.com/questions/14364/cross-referencing-between-different-files
+\setlist{nosep} % or \setlist{noitemsep} to leave space around whole list
+\usepackage{amsthm} %for theorems, proof
+\newcommand{\bfl}{\begin{flushleft}}
+\newcommand{\efl}{\end{flushleft}}
+\newcommand{\mys }{\hspace{0.1cm}}
+\newcommand{\figfont}{\footnotesize}
+\usepackage{multirow}
+\usepackage{mathtools}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor} % http://tex.stackexchange.com/questions/118173/how-to-write-ceil-and-floor-in-latex
+%\usepackage{mdframed} % already imported by pnas template
+%\newmdenv[topline=false,bottomline=false,rightline=false,skipabove=\topsep,skipbelow=\topsep]{siderules}
+\mathchardef\myhyphen="2D
+% Use the lineno option to display guide line numbers if required.
+% Note that the use of elements such as single-column equations
+% may affect the guide line number alignment.
+%
+% {pnasresearcharticle} = Template for a two-column research article
+% {pnasmathematics} = Template for a one-column mathematics article
+% {pnasinvited} = Template for a PNAS invited submission
+\newcommand{\myC}[1]{{$\mathcal{#1}$}} % as in 'my complexity class'
+
+%https://tex.stackexchange.com/questions/94016/how-to-reduce-space-between-image-and-its-caption
+\usepackage{caption}
+%\usepackage{setspace}
+%\captionsetup{font={small}} %  Nature cls overrides this
+%\setlength{\abovecaptionskip}{1pt plus 1pt minus 1pt} % overrides Nature's
+%\setlength{\belowcaptionskip}{1pt plus 1pt minus 1pt} % override Nature's
+%\usepackage{unixode} % for unicode characters; example: $ω$
+
+\usepackage[table]{xcolor} % for \arrayrulecolor{yellow}, changes hline and vline colors
+\definecolor{myTableLines}{HTML}{0a84f7}
+
+\usepackage[margin=1in]{geometry}
+%lmargin rmargin tmargin bmargin
+	\geometry{
+	 a4paper,
+	 %total={170mm,257mm},
+	 left=25mm
+	 ,right=25mm
+	 %,top=30mm
+	 %,bottom=13mm
+	 }
+
+% ----------------------------------
+%Squeezing the Vertical White Space
+%http://www.terminally-incoherent.com/blog/2007/09/19/latex-squeezing-the-vertical-white-space/
+% 	THIS FIXES THE PROBLEM OF SUBSECTIONS STARTING IN A NEW PAGE
+\setlength{\parskip}{10pt} % spce between two paragraphs
+\setlength{\parsep}{10pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topsep}{0pt}
+\setlength{\partopsep}{10pt}
+
+\usepackage{setspace}
+\onehalfspacing
+%\doublespacing
+%\singlespacing
+
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*2}{*1} % {left margin} {above-skip} {below-kip} , The * notation replaces the formal notation using plus/minus and etc.
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}

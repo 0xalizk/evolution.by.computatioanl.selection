@@ -1,0 +1,39 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Effect of Sampling Threshold}\label{sup_1Kvs5K}
+Increasing the sampling threshold in the simulation (i.e. how many NEP instances to simulate) does not change the results, due to the effect of the Central Limit Theorem  \cite{kallenberg_foundations_2006}. Figures SI \ref{supp_1Kvs5K_corr} and \ref{supp_1Kvs5K_wheel} %and \ref{supp_1Kvs5K_EGB}
+compare the results computed over 1,000 versus 5, 000 simulated instances (see the corresponding Figures 4 and 5 in the main text for detailed description).
+\subsection{Benefit-Damage Correlation:}
+
+\begin{figure}[H]
+		\centering
+				\includegraphics[scale=.6]{/10.1K.vs.5K/scatter/processed.png}
+				\caption{Increasing the sampling threshold from (A) 1,000 to (B) 5,000 NEP has virtually no effect on the resulting benefit-damage correlations.}
+				\label{supp_1Kvs5K_corr}
+\end{figure}
+
+\subsection{Effective Instance Size:}
+
+\begin{figure}[H]
+		\centering
+				\includegraphics[scale=.6]{/10.1K.vs.5K/wheel/processed.png}
+				\caption{Increasing the sampling threshold from (A) 1,000 to (B) 5,000 NEP has minimal to no effect on effective instance size (EIS). Legend: numbers between parenthesis are average +/- standard deviation. }
+				\label{supp_1Kvs5K_wheel}
+\end{figure}
+
+\begin{comment}
+    \subsection{Gained Benefits:}
+    \begin{figure}[H]
+    		\centering
+    				\includegraphics[scale=.6]{/10.1K.vs.5K/ETX/processed.png}
+    				\caption{Increasing the sampling threshold from (A) 1,000 to (B) 5,000 NEP has minimal to no effect on Gained Benefits (GB).}
+    				\label{supp_1Kvs5K_EGB}
+    \end{figure}
+\end{comment}
+%end_custom_content
+\printbibliography
+\end{document}

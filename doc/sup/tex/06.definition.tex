@@ -1,0 +1,93 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Formal Definition of the Network Evolution Problem (NEP)} \label{sup_NEP_definition}
+				\noindent Given: %http://tex.stackexchange.com/questions/82240/unwanted-space-before-flalign
+				\vspace{.3cm}
+				{\small
+				%\setlength{\abovedisplayskip}{0pt}\setlength{\belowdisplayskip}{0pt}\setlength{\abovedisplayshortskip}{0pt}\setlength{\belowdisplayshortskip}{0pt}
+						\begin{flalign*} % {align} produces equation numbers
+							&\mys\mys\boldsymbol{G}  = (g_1,g_2,\dots,g_n) \textrm{, }  \boldsymbol {A}  = (a_1,a_2,\dots,a_n)  \textrm{, }  a_j \in \{+1,0,-1\} \textrm{, } \mys\boldsymbol {t}\in\mathbb{R}\textrm{, \mys and }  \\
+							&\mys\mys\boldsymbol{M}  = \big [m_{jk}\big ] \quad \text{where} \quad  m_{jk} \in  \mathbb{R}, \mys \quad\forall j,k, \mys 1\leq j,k \leq n %\mathbb{R},
+											%\begin{bmatrix}%nside math mode, in order to use a different (smaller) font, you could/should use \scriptstyle or \scriptscriptstyle
+											%				m_{11} & m_{12} & \dots  & m_{1n} \\
+											%				m_{21} & m_{22} & \dots  & m_{2n} \\
+											%				\vdots & \vdots & \ddots & \vdots \\
+											%				m_{n1} & m_{n2} & \dots & m_{nn}
+											%			\end{bmatrix}
+											%	\quad \text{where} \quad  m_{jk} \in  \{+1,0,-1\} & %\mathbb{R},
+						\end{flalign*}
+				}
+
+				\noindent Let:
+				{\small
+				%\setlength{\abovedisplayskip}{0pt}\setlength{\belowdisplayskip}{0pt}\setlength{\abovedisplayshortskip}{0pt}\setlength{\belowdisplayshortskip}{0pt}
+						\begin{flalign*}
+							 \mys\mys\boldsymbol {B}  = (b_1,b_2,\dots, b_n) \textrm{,}\hspace{0.2cm}&\textrm{where}\hspace{0.2cm} b_j = \sum\limits_{k=1}^{n} m_{jk} \oplus a_k \hspace{0.15cm}+\hspace{0.15cm}\sum\limits_{k=1}^{n} m_{kj} \oplus a_j \hspace{.26cm}\textrm{and} \hspace{.4cm} &\\
+								 &  m_{xy} \oplus a_y  =
+											\scriptscriptstyle{\begin{cases}	% in math mode, use scriptstyle/scriptscriptstyle, not small/tiny
+													|m_{xy}| & \mys\textrm{if}\quad m_{xy} \times a_y >0 \\
+													\mys\mys 0 & \mys\textrm{otherwise}
+											\end{cases}
+											} &
+						\end{flalign*}
+				}
+				{\small
+						%\setlength{\abovedisplayskip}{0pt}\setlength{\belowdisplayskip}{0pt}\setlength{\abovedisplayshortskip}{0pt}\setlength{\belowdisplayshortskip}{0pt}
+						\begin{flalign*}
+						\mys\mys\boldsymbol {D}  = (d_1,d_2,\dots, d_n) \textrm{,}\hspace{0.15cm}&\textrm{where}\hspace{0.2cm} d_j = \sum\limits_{k=1}^{n} m_{jk} \ominus a_k \hspace{0.15cm}+\hspace{0.15cm} \sum\limits_{k=1}^{n} m_{kj}\ominus a_j \hspace{.21cm}\textrm{and} \hspace{.4cm} &\\
+								 & m_{xy} \ominus a_y =
+											\scriptscriptstyle{\begin{cases}
+															|m_{xy}| & \mys\textrm{if}\quad m_{xy} \times a_y < 0 \\
+															\mys\mys 0 & \mys\textrm{otherwise}
+											\end{cases}
+											} &
+						\end{flalign*}
+					}
+
+				\noindent Define:
+					{\small
+					  %\setlength{\abovedisplayskip}{0pt}\setlength{\belowdisplayskip}{0pt}\setlength{\abovedisplayshortskip}{0pt}\setlength{\belowdisplayshortskip}{0pt}
+						\begin{flalign*}
+							&\mys\mys f:\boldsymbol{G}  \rightarrow \{0,1\} \mys \textrm{maximizing} \mys  \sum\limits_{j=1}^{n} f(g_j)\times b_j
+							\mys\mys\textrm{s.t.} \mys\mys \Bigg(  \sum\limits_{j=1}^{n} f(g_j)\times d_j  \Bigg)  \leq \boldsymbol{t} &
+						\end{flalign*}
+					}
+
+Table \ref{informal_table} provides a summary of each element of NEP and its corresponding semantic interpretation in biological context (see also the main text for more on the semantics of NEP in biological context).
+
+\begin{comment}
+	The network can equivalently be represented as an adjacency matrix $M$, whereby a non-zero entry $m_{jk}$ indicates the existence of an interaction between genes $g_j$ and $g_k$
+	in which the latter is the target of the former.
+	The sign of a non-zero entry in $M$ indicates whether $g_j$'s effect on its target $g_k$ is promotional or inhibitory in nature, indicated with
+	$+1$ or $-1$, respectively.
+	A hypothetical Oracle advice (OA) on all or some of the genes simulates the evolutionary pressure on the
+	network, and
+	is represented as a ternary sequence $A = (a_1,a_2,\dots,a_n)$ where: $a_j=+1$ ($a_j=-1$) implies
+	the organism would be better off conserving (deleting) $g_j$; $a_j=0$ implies the Oracle has no opinion on $g_j$.
+	While $m_{jk}$ describes what the effect of $g_j$ on $g_k$ actually \textit{is}, $a_k$ describes whether that effect \textit{should} ideally be.
+	An interaction $m_{jk}$
+	is beneficial if it is in agreement with what the Oracle
+	says $g_k$ should be (i.e. either $(m_{jk}=+1$ AND $a_k=+1)$ OR $(m_{jk}=-1$ AND $a_k=-1)$), and damaging if it is
+	in disagreement with what the Oracle says $g_k$ should be (i.e. either $(m_{jk}=+1$ AND $a_k=-1)$ OR $(m_{jk}=-1$ AND $a_k=+1)$).
+	Each gene $g_j$ is henceforth assigned a benefit (damage) score $b_j$ ($d_j$) depending on how many beneficial (damaging)
+	interactions it \textit{projects} onto or \textit{attracts} from other genes through its
+	outgoing and incoming edges, respectively.
+	Each beneficial (damaging) interaction therefore adds $|m_{jk}|$ to the benefit (damage) score of both the source gene $g_j$ and the target gene $g_k$.
+	A gene can therefore have both non-zero benefit and damage score under a given pressure scenario, and so the optimization problem is:
+	what subset of genes should be conserved and which should be deleted (=define $f$) so as to maximize (minimize) the number of
+	interactions that are in agreement (disagreement) with the OA?
+	The OA can be imposed by conserving (deleting) every gene $\boldsymbol{g_j}$ where $a_j = +1$ ($a_j=-1$).
+	However,
+	conserving $\boldsymbol{g_j}$ can inadvertently contribute to a violation of  the OA if
+	$g_j$ happens to be a promoter (inhibitor) of one or more $g_k$ where $a_k=-1$($a_k=+1$), and
+	deleting $\boldsymbol{g_j}$ can inadvertently contribute to a violation of the OA if $g_j$
+	happens to be a promoter (repressor) of one or more $g_k$ where $a_k=+1$ ($a_k=-1$).
+	The idealistic pursuit of enforcing an OA is complicated by the reality of network connectivity.
+\end{comment}
+%end_custom_content
+\printbibliography
+\end{document}

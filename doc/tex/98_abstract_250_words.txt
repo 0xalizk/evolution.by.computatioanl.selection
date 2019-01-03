@@ -1,0 +1,17 @@
+
+	The power of random variation (through recombination and/or mutation) and non-random selection
+ 	to produce fine-tuned `hardware' traits has been extensively documented at various biomechanical levels (examples include allometric scaling, width and material of blood vessels, compartmentalization of sub-cellular components, fast-folding and aggressively-functioning enzymes).
+    It has been debated whether natural selection acts on system-level `software' traits, chief among which is the degree distribution of molecular interaction networks (MINs).
+    %
+    MINs are typically represented as graphs where nodes/edges represent genes/interactions. A node's degree is the number of edges connected to it.
+    %
+    Virtually all MINs, irrespective of organism or physiological context, have a majority (minority) of loosely-connected `leaves' (highly-connected `hubs') interacting with at most 1-3 (at least 10 or more) other genes.
+    Previous reports have proposed both adaptive and non-adaptive hypotheses for the origin of this majority-leaves minority-hubs (mLmH) topology.
+    %
+    Both however provide sufficient but not necessary conditions for the emergence of mLmH and therefore one cannot conclusively rule out the plausibility of the other.
+    %
+    We modeled the evolution of MINs as a computational optimization problem which describes the evolutionary pressure on MINs to conserve (mutate/delete) beneficial (damaging) genes so as to maximize (minimize) the overall number of beneficial (damaging) interactions network-wide.
+    %
+    Instances of this problem obtained from real MINs are far easier to satisfy compared to those obtained from random networks as a result of mLmH property.
+    %
+    Assuming \myC{P\neq NP}, our model provides both sufficient and necessary conditions for the emergence of mLmH topology as a software adaptation to circumvent computational intractability.

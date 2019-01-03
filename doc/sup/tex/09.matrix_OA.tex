@@ -1,0 +1,73 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Oracle advice on interactions}\label{matrix_OA}
+        An Oracle advice (OA) over interactions (edges) rather than genes (nodes), can be represented by a matrix $A=\big [a_{jk}\big ]$ where  $a_{jk}\in\{+1,-1\}$ if $m_{jk}\neq 0$ and $a_{jk}=0$ otherwise (recall $m_{jk}$ is the entry at row $j$ and column $k$ of the interaction matrix $M$, see NEP definition in Section SI \ref{sup_NEP_definition}).  While $m_{jk}\neq 0$ describes what the effect of $g_j$  on $g_k$ actually is, $a_{jk}$ describes what that effect should \textit{ideally} be. A beneficial (damaging) interaction is one where $m_{jk} \times a_{jk} = 1 $ $(m_{jk}\times a_{jk}=-1)$. In other words, an interaction is beneficial (damaging) if it is in agreement (disagreement) with what the Oracle says that interaction should ideally be.  For example, assume $g_j$ inhibits $g_k$, i.e. $m_{jk}=-1$,  but the OA is $a_{jk}=+1$, then $m_{jk}\times a_{jk}=-1$ implies the real effect disagrees with the ideal and the interaction is deemed damaging. The benefit (damage) score of each gene $g_j$, given a matrix OA, is the sum of beneficial (damaging) interactions that $g_j$ is \textit{projecting} onto (out-edges) or \textit{attracting} from (in-edges) other genes in a similar manner as those calculated under a string OA (Section SI \ref{sup_NEP_definition}).
+
+        NEP remains \myC{NP}-hard under a matrix OA. To prove this, we modify the proof in  Section  \ref{KOPdefinition} as follows:
+
+
+            \vspace{5pt}
+
+            \noindent I. Define $\boldsymbol{\gamma}:\{1,..,r\}\rightarrow \{1,..,r\}$ \mys s.t. $\forall i, 1\leq i <r: w_{\gamma(i)} \leq w_{\gamma(i+1)}$
+
+
+            \noindent II. Let $\boldsymbol{G}=\boldsymbol{O}+\{o_{r+1}\}$, \mys $\boldsymbol{t}=\boldsymbol{c}$.
+
+            \noindent III. Let $\boldsymbol  {M}$ \mys be a $d\times d$ zero-matrix, $d=r+1$. Populate $M$ as follows:
+
+                    \noindent\hspace{20pt}1. Repeat for \mys$i=1$\quad to\quad $i=r-1$:
+                    \setlength{\belowdisplayskip}{0pt} %\setlength{\belowdisplayshortskip}{0pt}\setlength{\abovedisplayskip}{0pt} \setlength{\abovedisplayshortskip}{0pt}
+                    %\begin{siderules}
+                    \begin{alignat*}{7}
+                                \qquad\qquad & j\mys       & \leftarrow\mys\mys   & \gamma(i)   & \mys\text{and} \quad\mys\mys & k\mys       & \leftarrow\mys\mys   & \gamma(i+1) \\
+                                \qquad\qquad & m_{jj}\mys  & \leftarrow\mys\mys   & v_j         & \mys\text{and} \quad\mys\mys & m_{jk}\mys  & \leftarrow\mys\mys   & -w_j \\
+                                \qquad\qquad & w_{k}\mys   & \leftarrow\mys\mys   & w_{k} - w_j & \mys                         &\mys         & \mys                 & \mys
+                    \end{alignat*}
+                    %\end{siderules}
+                    \noindent\hspace{20pt}2. $j\leftarrow\gamma(r)$, $m_{jj}\leftarrow v_j$, $m_{dj}\leftarrow -w_j$
+
+
+            \noindent IV. Let  $A$ be a $d\times d$ matrix where:
+
+                        \qquad $\hspace{2cm}a_{jk}  =	\scriptscriptstyle{\begin{cases}	% in math mode, use scriptstyle/scriptscriptstyle, not small/tiny
+                                                            +1 & \quad\textrm{if}\quad m_{jk} \neq  0 \\
+                                                            0 & \quad\textrm{otherwise}
+                                                    \end{cases}
+                                                    }$
+
+            \noindent V. Calculate $\boldsymbol{B}$, $\boldsymbol{D}$ as follows:
+
+
+
+                    \qquad $b_j = \sum\limits_{k=1}^{n} m_{jk} \oplus a_{jk} \hspace{0.1cm}+\hspace{0.1cm} \sum\limits_{k=1}^{n} m_{kj} \oplus a_{kj} \quad\textrm{where:}$
+
+                    \qquad $\hspace{2cm}m_{xy} \oplus a_{xy}  =	\scriptscriptstyle{\begin{cases}	% in math mode, use scriptstyle/scriptscriptstyle, not small/tiny
+                                                        1 & \quad\textrm{if}\quad m_{xy} \times a_{xy} >0 \\
+                                                        0 & \quad\textrm{otherwise}
+                                                \end{cases}
+                                                }$
+
+                    \qquad and similarly the damage score is:
+
+                    \qquad $d_j = \sum\limits_{k=1}^{n} m_{jk} \ominus a_{jk} \hspace{0.1cm}+\hspace{0.1cm} \sum\limits_{k=1}^{n} m_{kj} \ominus a_{kj} \quad\textrm{where:}$
+
+                    \qquad $\hspace{2cm}m_{xy} \ominus a_{xy}  = \scriptscriptstyle{\begin{cases}	% in math mode, use scriptstyle/scriptscriptstyle, not small/tiny
+                                                        1 & \quad\textrm{if}\quad m_{xy} \times a_{xy} < 0 \\
+                                                        0 & \quad\textrm{otherwise}
+                                                \end{cases}
+                                                }$
+
+
+            \noindent VI. Define $\boldsymbol{f}:\boldsymbol{G}  \rightarrow \{0,1\}$ (Section \ref{sup_NEP_definition})
+
+
+            \noindent  VII. Return $(f(o_1), \dots, f(o_r))$ as KOP's solution vector \hspace{5pt} $\blacksquare$
+
+
+%end_custom_content
+\printbibliography
+\end{document}

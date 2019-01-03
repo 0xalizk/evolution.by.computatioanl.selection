@@ -1,0 +1,38 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{NP-hardness of NEP}\label{KOPdefinition}
+    The $\mathcal{NP}\myhyphen$hard knapsack optimization problem (KOP)  \cite{karp_reducibility_2010} is defined as:
+    Given a sequence of objects $\boldsymbol{O}=(o_1,o_2,\dots,o_r), \mys$ values $\boldsymbol{V}=(v_1,v_2,\dots,v_r)$,
+    weights $\boldsymbol{W}=(w_1,w_2,\dots,w_r)$, and a knapsack capacity $\boldsymbol{c}$ where $v_i, w_i, \boldsymbol{c}  \in \mathbb{N}$,
+    define:
+
+    $f:\boldsymbol{O}  \rightarrow \{0,1\}$ maximizing $\sum\limits_{j=1}^{r} f(o_j)\times v_j$ s.t. $ \Bigg(  \sum\limits_{j=1}^{r} f(o_j)\times w_j  \Bigg)  \leq \boldsymbol{c}$.
+
+    \vspace{20pt}
+    \noindent\textbf{Theorem}: \textit{NEP is $\mathcal{NP}\myhyphen$hard by reduction from KOP}.
+    \vspace{20pt}
+
+
+\subsection{Proof sketch}\label{sup_proof_sketch}
+				For a given KOP instance with $r$ items, create a graph with $r+1$ nodes: $n_1, n_2\dots, n_{r+1}$. Assume an OA where $a_i=+1 \mys \forall a_i \in  A$ except for $a_{r+1}=0$.
+				For each $v_i\in\boldsymbol{V}$, draw a $v_i$-weighted edge from $n_i$ to itself.
+				Sort objects in $\boldsymbol{O}$ ascendingly by their respective weights in $\boldsymbol{W}$, call this sorted
+				list $\boldsymbol{O}^{\prime}$.
+				$\forall w_i\in\boldsymbol{W}$, draw a $-w_i$-weighted edge from $n_i$ to $n_j$ where $o_j$ is
+				the successor of $o_i$ in $\boldsymbol{O}^{\prime}$.
+				Because $n_j$ is attracting damaging interactions due to incoming edges from $n_i$,
+				update its weight to $w_j-w_i$.
+				For the last node $n_r$, draw $-w_r$-weighted edge from node $n_{r+1}$ to $n_r$.
+				Because $n_{r+1}$ has zero-value, it's ruled out \textit{a priori} from the solution vector.
+
+%\section{Attraction-only simulations}
+
+%\section{Projection-only simulations}
+
+%end_custom_content
+\printbibliography
+\end{document}

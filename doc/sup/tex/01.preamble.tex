@@ -1,0 +1,114 @@
+%begin_custom_header
+\documentclass[12pt]{article}	% RECOMB: "at least 11 point font size on U.S. standard 8 1/2 by 11 inch paper with no less than one inch margin all around."
+%\documentclass{nature}
+\usepackage[utf8]{inputenc}   % umlauts etc.
+\usepackage[english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+\usepackage[hidelinks]{hyperref}
+\setlength\parindent{25pt}
+% ----------------------------------
+%\usepackage[backend=biber,style=nature,sorting=none,url=true]{biblatex}
+% url = false. There are also isbn, doi etc., similar options.
+%\addbibresource{/Users/unbaxabl/Downloads/Publishing/z-misc/zotero-library/better_bibtex_standalone.bib}
+
+% ----------------------------------
+% Citation style 	biblatex stylename
+% ----------------------------------
+% 	ACS				chem-acs
+% 	AIP				phys (*)
+% 	Natur			nature
+% 	Science			science
+% 	IEEE			ieee
+% 	Chicago			chicago-authordate
+% 	MLA				mla
+% 	APA				apa
+% ----------------------------------
+% sorting options:
+% ----------------------------------
+%	nty 		Sort by name, title, year.
+%	nyt 		Sort by name, year, title.
+%	nyvt 		Sort by name, year, volume, title.
+%	anyt 		Sort by alphabetic label, name, year, title.
+%	anyvt 		Sort by alphabetic label, name, year, volume, title.
+%	ynt 		Sort by year, name, title.
+%	ydnt 		Sort by year (descending), name, title.
+%	none 		Do not sort at all. All entries are processed in citation order.
+% ----------------------------------
+\newcommand{\harpoon}{\overset{\rightharpoonup}}
+\newtheorem{theorem}{Theorem}
+\usepackage{verbatim} % multiline comment
+\usepackage{graphicx}
+\graphicspath{{/Users/unbaxabl/Downloads/Publishing/Figures/}}
+\setlength\fboxsep{0pt} % figure border padding
+\setlength\fboxrule{1pt} % figure outline
+\usepackage[fleqn]{amsmath}  % also \documentclass[fleqn]{article}
+\usepackage[margin=1in]{geometry}
+%lmargin rmargin tmargin bmargin
+	\geometry{
+	 a4paper,
+	 %total={170mm,257mm},
+	 left=20mm
+	 ,right=20mm
+	 %,top=30mm
+	 %,bottom=13mm
+	 }
+
+
+%\abovedisplayskip=0pt
+%\abovedisplayshortskip=0pt
+%\belowdisplayskip=0pt
+%\belowdisplayshortskip=0pt
+%
+%\setlength{\mathindent}{0pt}
+%
+\usepackage{amsfonts} % for R (real numbers)
+\usepackage{float}
+% \usepackage[font=scriptsize,labelfont=bf]{caption}
+\usepackage{booktabs, cellspace, hhline} % \cellspacetoplim; http://tex.stackexchange.com/questions/302960/modify-arraystretch-for-a-single-row-in-table
+
+
+\usepackage[percent]{overpic}
+\usepackage[export]{adjustbox}
+% ----------------------------------
+%Squeezing the Vertical White Space
+%http://www.terminally-incoherent.com/blog/2007/09/19/latex-squeezing-the-vertical-white-space/
+% 	THIS FIXES THE PROBLEM OF SUBSECTIONS STARTING IN A NEW PAGE
+%   \setlength{\parskip}{5pt}
+%   \setlength{\parsep}{10pt}
+%   \setlength{\headsep}{0pt}
+%   \setlength{\topskip}{0pt}
+%   \setlength{\topmargin}{0pt}
+%   \setlength{\topsep}{0pt}
+%   \setlength{\partopsep}{10pt}
+\usepackage[compact]{titlesec}
+\titlespacing{\section}{0pt}{*2}{*2} % {left margin} {above-skip} {below-kip} , The * notation replaces the formal notation using plus/minus and etc.
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}
+% ----------------------------------
+%\newenvironment{absolutelynopagebreak}
+%  {\par\nobreak\vfil\penalty0\vfilneg
+%   \vtop\bgroup}
+%  {\par\xdef\tpd{\the\prevdepth}\egroup
+%   \prevdepth=\tpd}
+% ----------------------------------
+\newcommand{\bfl}{\begin{flushleft}}
+\newcommand{\efl}{\end{flushleft}}
+\newcommand{\mys }{\hspace{0.1cm}}
+\newcommand{\figfont}{\footnotesize}
+
+\usepackage[table]{xcolor} % for \arrayrulecolor{yellow}, changes hline and vline colors
+\definecolor{myTableLines}{HTML}{0a84f7}
+
+\usepackage{relsize} % \tiny, \scriptsize, \footnotesize, \small, \normalsize, \large, \Large, \LARGE, \huge, \Huge
+                    % if the current font size is 'normalsize', then using \relsize{-1} ==> go down one level ==> font = small
+                    % and using \relsize{1}  ==> font = large
+\newcommand{\myC}[1]{{\relsize{-1}{$\mathcal{#1}$}}} % as in 'my complexity class'
+
+% padding in tables
+\newcommand{\myPadTop}{6.5pt}
+\newcommand{\myPadBottom}{4pt}
+
+\mathchardef\myhyphen="2D
+\usepackage{amssymb}%for QED symbol \blacksquare
+%end_custom_header

@@ -1,0 +1,83 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Simulated evolution}\label{sup_sim_evo}
+    Figure SI \ref{sup-workflow} shows the algorithmic workflow of the simulated evolution. In the fitness calculation step (denoted by a star in Figure SI  \ref{sup-workflow}), the fitness of a network vis-a-vis the current NEP instance is calculated based on 1) effective instance size (EIS) and 2) effective gained benefits (EGB) \cite{atiia_computational_2017-1}.
+    EIS is defined as the \% of unambiguous nodes in the instance:
+
+
+        \begin{align}
+            \qquad\qquad\qquad\qquad\qquad\qquad EIS=\frac{|\{n_i:b_i=0|d_i=0\}|}{N}
+        \end{align}
+
+
+    \vspace{3mm}\noindent where $N$ is the total number of nodes and $b_i$ and $d_i$ and the benefit and damage score of some node $n_i$. Let $(s_1, s_2, .., s_k)$ be the solution vector to an NEP instance where $s_i\in\{0,1\}$  and $s_i=1 \mys (s_i=0)$ implies "conserve" ("delete"). The multiset $B=\{b_i: s_i=1\}$ contains a list of all the benefits of nodes that are to be optimally conserved, and the  effective gained benefits EGB=$sum(set(B))$.  EGB is hence $B$ normalized by the number of nodes it takes  to add a certain benefit value). For example, with
+    $B1=\{1,1,1,5\}$
+    and
+    $B2=\{2,6\}$, $sum(B1)=sum(B2)=8$.
+    But
+    $EGB1 = sum(set(B1))=sum({1,5})= 6$
+    while
+    $EGB2 = sum(set(B2))=sum({2,6})=8$.
+    Let $B_{tot}$ be the total benefit in a given NEP instance (the sum of gained benefits of conserved genes and lost benefits of deleted genes), the fitness of a given NEP instance $S$ is measured as:
+
+        \begin{align}
+            \qquad\qquad\qquad\qquad\qquad\qquad F(S) = EIS^\alpha \times \frac {EGB}{B_{tot}}
+        \end{align}
+
+
+
+    \vspace{3mm}\noindent where $\alpha\in \approx \mathbb{R}^{+}$. We applied $\alpha=2$ in all simulation. With  $\alpha$, the weight  given to EIS vs EGB can be calibrated. This reflects the inherent opposition of EIS vs EGB, as EIS is best minimized with a large number of leaves while EGB is maximized with a large number of hubs. While EGB indicates how well a network accumulates as many beneficial interactions as possible with the smallest possible number of genes to conserve, normalizing it by the total benefits $B_{tot}$ penalizes networks that hemorrhage beneficial interactions that are lost to deleted genes in the optimal solution. The threshold $t$ of tolerated damaging interactions in the solution is imposed at 5\% of the sum of all damages in all simulations.
+
+
+    Figures SI \ref{fig:sim_evo_ppi}, \ref{fig:sim_evo_reg} and \ref{fig:sim_evo_db} show extended results of the degree distribution of synthetically evolved networks grouped by network families (PPIs, regulatory and DB-sourced networks respectively). In each simulation, the network growth (add-edge and add-node mutations) are halted when the size of the synthetic network has become equal to the corresponding real network. Once network growth is disabled, the evolutionary algorithm is further run for a constant 2000 generations with re-assign edge mutation only.
+
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=.42]{11.ACM-BCB/Science/workflow_transparent_2nd_draft.png} % original width= 42.65cm,  height = 19.86cm
+                \caption{The algorithmic workflow of the evolutionary algorithm. Simulations begin with empty networks or seed networks that have randomly distributed edges. Each network is randomly mutated by reassigning one edge at each generation and, if growth is allowed, one node is also added along with as many randomly assigned edges as needed to maintain the desired edge:node ratio. An instance of the network evolution problem (NEP) is obtained by generating a random Oracle advice (OA) on all edges in the network. A network's fitness at each instance $S$ is calculated following the $F(S)$ formula (see text). The 10\% of networks with the highest average fitness over all instances are selected to breed a population of networks for the subsequent generation. Adapted with modification with permission from  \cite{atiia_computational_2017-1}.
+                }
+        \label{sup-workflow}
+     \end{figure}
+
+
+
+
+
+    	\begin{figure}[H]%[!htb]
+    			\centering
+    					\includegraphics[width=1.0\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/PPIs.png}
+    					\caption
+                            {
+                                Evolving synthetic networks to the same size (number of nodes and edges) as protein-protein interaction networks.
+                            }
+    					\label{fig:sim_evo_ppi}
+    	\end{figure}
+
+    	\begin{figure}[H]%[!htb]
+    			\centering
+    					\includegraphics[width=1.0\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/Regulatory.png}
+    					\caption
+                            {
+                                Evolving synthetic networks to the same size (number of nodes and edges)  as regulatory networks.
+                            }
+    					\label{fig:sim_evo_reg}
+    	\end{figure}
+
+    	\begin{figure}[H]%[!htb]
+    			\centering
+    					\includegraphics[width=1.0\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/DBSourced.png}
+    					\caption
+                            {
+                                Evolving synthetic networks to the same size (number of nodes and edges)  as database-sourced networks.
+                            }
+    					\label{fig:sim_evo_db}
+    	\end{figure}
+\clearpage %https://tex.stackexchange.com/questions/2958/why-is-newpage-ignored-sometimes
+%end_custom_content
+%\printbibliography
+\end{document}

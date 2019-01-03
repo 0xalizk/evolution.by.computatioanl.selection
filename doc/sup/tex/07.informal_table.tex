@@ -1,0 +1,125 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+
+
+%\setlength{\textfloatsep}{0pt plus 1.0pt minus 1.0pt} % http://tex.stackexchange.com/questions/26521/how-to-change-the-spacing-between-figures-tables-and-text
+	\begin{table}[H]%[t] %h:here, t:top of page, b:bottom of page, more: http://tex.stackexchange.com/questions/35125/how-to-use-the-placement-options-t-h-with-figures
+		\setlength\arrayrulewidth{.1pt}\arrayrulecolor[HTML]{0a84f7} %https://en.wikibooks.org/wiki/LaTeX/Colors#Adding_the_color_package
+        {\footnotesize % \tiny, \scriptsize, \footnotesize, \small, \normalsize, \large, \Large, \LARGE, \huge, and \Huge.
+			\setlength\cellspacetoplimit{4pt} % padding in table cells
+			\setlength\cellspacebottomlimit{4pt} %padding in table cells
+			\begin{tabular}{ @{}c|Sl@{}}
+                % http://tex.stackexchange.com/questions/302960/modify-arraystretch-for-a-single-row-in-table
+				\hline
+					$\boldsymbol{G}  = (g_1,g_2,\dots,g_n)$
+					&
+					A sequence of \textbf{\textit{G}}enes: any transcribable element on the genome
+				%---------------------------------------------------------------------------------------------
+				\\[.01cm] \hline
+					\shortstack[c]{ $\boldsymbol {A}  = (a_1,a_2,\dots,a_n)$ \\ \mys }
+					&
+					\shortstack[l]{\\A ternary string representing an Oracle \textbf{\textit{A}}dvice:  \\
+										$a_j =
+											\begin{cases}
+													+1 \quad & \implies g_j \mys \text{is advantageous}
+													\\
+													-1 \quad & \implies g_j  \mys \text{is disadvantageous}
+													\\
+													0 \quad & \implies \text{no opinion on} \mys  g_j
+												\end{cases}	 $
+						}
+				\\[.01cm] \hline
+				%---------------------------------------------------------------------------------------------
+						$\boldsymbol  {M} = \big [m_{jk}\big ] $
+							%	\scriptscriptstyle{\begin{bmatrix}
+							%		m_{11} & m_{12} & \dots  & m_{1n} \\
+							%		\vdots & \vdots & \ddots & \vdots \\
+							%		m_{n1} & m_{n2} & \dots & m_{nn}
+							%	\end{bmatrix}}$
+						&
+						\shortstack[l]{ $n\times n$ \mys \textbf{\textit{I}}nteraction \textbf{\textit{M}}atrix:
+								$m_{jk} =
+									\begin{cases}
+										p>0 \quad &\implies g_j \mys  \text{promotes} \mys   g_k
+										\\
+										q<0 \quad &\implies g_j \mys  \text{represses} \mys   g_k
+										\\
+										0 \quad\quad & \implies  g_j \mys  \text{and} \mys   g_k  \mys  \text{don't interact}
+									\end{cases}$
+						}
+				\\[.01cm] \hline
+				%---------------------------------------------------------------------------------------------
+					$\boldsymbol {t} \in\mathbb{R}$
+					&
+					\textit{\textbf{t}}olerance threshold on damages%, expressed as a \% of total damage network-wide.  %  $\Bigg(  \sum\limits_{j=1}^{n} f(g_j)\times d_j  \Bigg)$
+				\\[.01cm] \hline
+				%---------------------------------------------------------------------------------------------
+					% \shortstack allows for line break within the cell
+					 \shortstack[c]{$\boldsymbol{B} = (b_1,b_2, \dots, b_n)$ \\  $\boldsymbol{D} = (d_1,d_2, \dots, d_n)$}
+					&
+					\shortstack[l]{Each gene   $g_j$   has a corresponding benefit value   $\boldsymbol{b_j}$   and damage value   $\boldsymbol{d_j}$ \\ given an Oracle advice on $g_j$ and
+					all or some of its interaction partners. }
+				\\[0.01cm] \hline
+				%---------------------------------------------------------------------------------------------
+				\shortstack[c]{\\$m_{xy} \oplus a_y  =$\tiny{$
+								\begin{cases}
+									|m_{xy}| & \textrm{if}\mys m_{xy}\times a_y >0 \\
+									\mys\mys 0 & \textrm{otherwise}
+								\end{cases}	$}}
+						&
+							%\shortstack[l]{ \\
+							\parbox[t]{.7\textwidth}{\raggedright If the effect of  $g_x$   on   $g_y$  is in \textbf{agreement} with what the Oracle
+							says   $g_y$   should be (i.e.  $m_{xy}$   and
+							$a_y$  have the \newline same sign),  then increment   $b_x$  by $|m_{xy}|$}
+				\\[-0.1cm] \hline
+				%---------------------------------------------------------------------------------------------
+				\shortstack[c]{\\$m_{xy} \ominus a_y  =$\tiny{$
+								\begin{cases}
+									|m_{xy}| & \textrm{if}\mys m_{xy}\times a_y < 0 \\
+									\mys\mys 0 & \textrm{otherwise}
+								\end{cases}	$}}
+							&
+							%\shortstack[l]{ \\
+							\parbox[t]{.7\textwidth}{\raggedright If the effect of  $g_x$   on   $g_y$  is in \textbf{disagreement} with what the Oracle
+							says   $g_y$   should be (i.e.  $m_{xy}$   and
+							$a_y$  have different signs), then increment   $d_x$ by $|m_{xy}|$}
+				\\[-0.1cm] \hline
+				%---------------------------------------------------------------------------------------------
+					\parbox[t]{.2\textwidth}{\centering
+					%\begin{tabular}{c}
+								$ f:\boldsymbol{G}  \rightarrow \{0,1\}$   %\\
+
+								maximizing:
+
+								$\sum\limits_{j=1}^{n} f(g_j)\times b_j$ %\\
+
+								subject to:
+
+								$\Bigg(  \sum\limits_{j=1}^{n} f(g_j)\times d_j  \Bigg)  \leq \boldsymbol{t}$
+						%\end{tabular}
+						}
+						&
+						\parbox[t]{.72\textwidth}{\raggedright %\parbox[position][height][inner-pos]{width}{text}
+						%\begin{tabular}[H]{m{.7\textwidth}}
+							The idealistic pursuit of enforcing an Oracle advice (OA) is complicated by the reality of network connectivity:\newline
+							OA can be imposed by deleting every gene $\boldsymbol{g_i}$ where $a_i = -1$  and conserving every gene $\boldsymbol{g_j}$
+							where $a_j = +1$. However: \textbf{deleting} $\boldsymbol{g_i}$ can inadvertently contribute to a violation of the OA if $g_i$
+							happens to be a promoter (repressor) of some $g_k$ that should in fact be promoted  (repressed); and \textbf{conserving} $\boldsymbol{g_j}$
+							can inadvertently contribute to a violation of the OA if $g_j$ happens to be a promoter (repressor) of some $g_k$ that should in fact be
+							repressed (promoted). What subset of genes should be conserved/deleted (define $f$) such that the OA is supported by as many interactions
+							as possible (the $maximize$ .. $subject$ $to$.. clauses)? }
+					\\[.01cm] \hline
+
+
+			\end{tabular}
+            }%end small size
+        \caption{ The syntax (left column) and semantics (right) of the network evolution problem (NEP)}
+        \label{informal_table}
+        \end{table}
+
+%end_custom_content
+\printbibliography
+\end{document}

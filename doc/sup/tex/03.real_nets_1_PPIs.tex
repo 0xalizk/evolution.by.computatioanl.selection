@@ -1,0 +1,72 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{MINs with experimental evidence and their synthetic analogs: }\label{sup_realnets}
+\subsection{protein-protein interaction networks}\label{sec:data_DB_nets}
+    Table \ref{tab:networks_summary_PPI}  shows the details and references of protein-protein interaction (PPI) networks (raw data and source code available in  \cite{atiia_case-study_2017}).
+    PPI networks represent a "universe of possibilities", where combinatorial experiments test the affinity of each protein against all others in (typically, in large-scale experiments) exogenous settings. Widely used experimental methods include yeast two-hybrid (Y2H) and affinity purification followed by Mass spectrometry (AP-MS). Examining the literature references in Table \ref{tab:networks_summary_PPI} in chronological order of publication dates (ranging from 2008-2016), one observes a rapid increase in the scale  and resolution  of high-throughput methods with works by Rolland et \textit{al.}  \cite{rolland_proteome-scale_2014} and Yang et \textit{al.}  \cite{yang_widespread_2016} representing the cutting edge in terms of coverage and resolution respectively.
+    In  \cite{yang_widespread_2016}, it was shown that different isoforms of the same protein can exhibit quite different interaction profiles. Therefore the degree of a gene (particularly hub genes) may in fact be inflated in networks where isoforms are not distinguished: that gene should ideally be broken down to separate nodes corresponding to each isoform.
+    Typically, further validation of the resulting networks is conducted on a subset of interactions by testing their affinity in endogenous setting (which in turn is used to calculate some measure of true/false positives/negatives or some combination of such ratios) or comparing the resulting interactions to (small) gold standard data sets. It is important to note that PPI networks are generally undirected, since the experimental methods only establish the existence of an interaction but reveal nothing about the type (whether promotional or inhibitory) or directionality (which of the two proteins affects the other) of an interaction. The Fly network is the one exception, as both the direction and type of its interactions have been assessed using a simple prediction algorithm which achieved "90\% precision and 41\% recall (2.8\% false positive rate and 59\% false negative rate)"  \cite{vinayagam_integrating_2014}.
+    %All of PPI networks in this study were mapped using the yeast two-hybrid (Y2H) experimental method with the exception of Fly which was generated using RNA interference (RNAi) screens.
+    Figure SI \ref{fig:deg_dist_PPI} shows the degree distribution of PPI networks and their corresponding synthetic analogs which were generated using the same method discussed in Section "Simulation of evolutionary pressure" in the main text.
+    %\setlength{\textfloatsep}{0pt plus 1.0pt minus 1.0pt} % http://tex.stackexchange.com/questions/26521/how-to-change-the-spacing-between-figures-tables-and-text
+    \newpage
+    \begin{table}[H]%[!htb] %h:here, t:top of page, b:bottom of page, more: http://tex.stackexchange.com/questions/35125/how-to-use-the-placement-options-t-h-with-figures
+        \centering
+		\setlength\arrayrulewidth{.1pt}\arrayrulecolor{myTableLines}%\arrayrulecolor[HTML]{0a84f7} %https://en.wikibooks.org/wiki/LaTeX/Colors#Adding_the_color_package
+		\scriptsize %\small \tiny, \scriptsize, \footnotesize, \small, \normalsize, \large, \Large, \LARGE, \huge, and \Huge.
+			\setlength\cellspacetoplimit{\myPadTop} % padding in table cells
+			\setlength\cellspacebottomlimit{\myPadBottom} %padding in table cells
+			\begin{tabular}{@{}Sc Sc|Sc|Sc|Sc|Sc|Sc@{}}  % http://tex.stackexchange.com/questions/302960/modify-arraystretch-for-a-single-row-in-table
+				\cline{2-7}
+                    %
+					& \textbf{\normalsize PPI Network} & \textbf{\normalsize no. nodes } & \textbf{\normalsize no. edges }	& \textbf{\normalsize e2n ratio } & \textbf{\normalsize directed? } & \textbf{\normalsize signed? }
+                    %
+                %\\[.05cm] \cline{1-6} % \multirow{''num_rows''}{''width''}{''contents''}
+				%	\multirow{7}{*}{\textbf{\normalsize PPIs}} & Plant  \cite{consortium_evidence_2011}  &  2661  &  5664  &  2.13  &   0.450
+                        \\[.05cm] \cline{2-7}\cline{2-7}\cline{2-7}
+                            & Plant  \cite{consortium_evidence_2011}  &  2661  &  5664  &  2.13  & no & no %&   0.450
+        				\\[.05cm] \cline{2-7}\cline{2-7}\cline{2-7}
+        					& Bacteria  \cite{rajagopala_binary_2014} &  1267  &  2233   &  1.76  & no & no %&   0.567
+        				\\[.05cm] \cline{2-7}
+        					& Yeast  \cite{yu_high-quality_2008}      &  2018  &  2930   &  1.45  & no & no %&   0.689
+        				\\[.05cm] \cline{2-7}
+        					& Worm  \cite{simonis_empirically_2009}   &  2528  &  3864   &  1.53  & no & no %&   0.654
+        				\\[.05cm] \cline{2-7}
+        					& Fly  \cite{vinayagam_integrating_2014}  &  3352  &  6094   &  1.82  & yes & yes %&   0.550
+        				\\[.05cm] \cline{2-7}
+        					& Human  \cite{rolland_proteome-scale_2014}      &  4303  &  13944  &  3.24  & no & no %&   0.309
+        				\\[.05cm] \cline{2-7}
+        					& HumanIso  \cite{yang_widespread_2016}   &  629  &  996     &  1.58  & no & no %&   0.632
+                        %\\[.05cm] \cline{1-6}
+                        \\[.05cm] \cline{2-7}
+            \end{tabular}
+            \caption[Summary of PPI networks.]
+                    {
+                        Summary of protein-protein interaction (PPI) networks. The direction and sign of an interaction were assigned at random (coin flip) in undirected and/or unsigned networks. References, data and source code publicly available in  \cite{atiia_case-study_2017}.
+                     }
+            \label{tab:networks_summary_PPI}
+    \end{table}
+
+    \begin{figure}[H]%[!htb]
+        \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/PPIs/PPI.png}
+        \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/PPIs/NH.png}
+        \\
+        \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/PPIs/NL.png}
+        \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/PPIs/RN.png}
+        \caption
+                [
+                    Degree distribution of PPI networks.
+                ]
+                {
+                    Degree distribution of PPI networks and their corresponding synthetic analogs: no-hubs (NH), no-leaves (NL) and random (RN).
+                }
+        \label{fig:deg_dist_PPI}
+    \end{figure}
+
+%end_custom_content
+%\printbibliography
+\end{document}

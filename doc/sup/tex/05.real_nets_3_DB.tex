@@ -1,0 +1,75 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\subsection{Database-sourced networks}\label{sup_realnets_DB}
+Table \ref{tab:networks_summary_DB} shows details and source references of networks obtained from the  BioGrid database or from multiple databases queried simultaneously through the PSICQUIC web service (raw data and source code available in  \cite{atiia_case-study_2017}).
+All obtained interactions are undirected and unsigned. Interactions in BioGrid networks represent physical interactions which have been validated by at least two studies, except for human and yeast networks in which interactions have been validated by at least 4 and 3 studies, respectively (because of the large number of interactions for these two species, it was still possible to obtain large networks even under this stringent selection criteria). Multiple databases  (excluding BioGrid) were searched programmatically with a Molecular Interaction Query Language (MIQL) query through the  PSICQUIC web service interface (source code publicly available in  \cite{atiia_case-study_2017}).
+The query specifies interactions where both interactors (1) are from the same species,  (2) they interact physically, and (3) the interaction has been experimentally detected.
+It should be noted that some PSICQUIC interactions did distinguish whether an interactor is an isoform of a well-known gene. Figure SI \ref{fig:deg_dist_DB} shows the degree distribution of the resulting networks and their corresponding synthetic analogs. The Plant-PSICQUIC network is anomalous in its degree distribution, indicating sporadic coverage of its reported interactions. Other networks of even smaller size still exhibit the mLmH property, which can be a sign that the underlying studies behind them were less sporadic in their coverage (i.e. focusing on specific functional units).
+
+
+\newpage
+
+%#########################################################################################################################
+            \begin{table}[H]%[H]%[!htb]
+                \centering
+                \setlength\arrayrulewidth{.1pt}\arrayrulecolor{myTableLines}%\arrayrulecolor[HTML]{0a84f7}
+                \scriptsize
+                    \setlength\cellspacetoplimit{\myPadTop}\setlength\cellspacebottomlimit{\myPadBottom}
+                    \begin{tabular}{@{}Sc Sc|Sc|Sc|Sc|Sc|Sc@{}}
+                    \cline{2-7}
+                        & \textbf{\normalsize DB-sourced Network} & \textbf{\normalsize no. nodes} & \textbf{\normalsize no. edges}	& \textbf{\normalsize e2n ratio} & \textbf{\normalsize directed? } & \textbf{\normalsize signed? } %&  \textbf{\normalsize n2e ratio}
+                        %\\[.05cm] \cline{2-7}
+                        %\multirow{9}{*}{\textbf{\normalsize DB-sourced}} & Human-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 3436      & 8254      & 2.402     & 0.416
+                            \\[.05cm] \cline{2-7}
+                                    & Plant-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 1565      & 2745      & no & no %& 1.754     & 0.57
+                            \\[.05cm] \cline{2-7}
+                                   & Plant-PSICQUIC  \cite{aranda_psicquic_2011}         & 230       & 789       & 3.43   & no & no   % & 0.292
+                            \\[.05cm] \cline{2-7}
+                                    & Yeast-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 2418      & 7668      & 3.171  & no & no    %& 0.315
+                            \\[.05cm] \cline{2-7}
+                                    & Yeast-PSICQUIC  \cite{aranda_psicquic_2011}        & 767       & 1386      & 1.807  & no & no    %& 0.553
+                            \\[.05cm] \cline{2-7}
+                                    & Worm-BioGrid  \cite{chatr-aryamontri_biogrid_2017}   & 55        & 64        & 1.164  & no & no    %& 0.859
+                            \\[.05cm] \cline{2-7}
+                                    & Fly-BioGrid  \cite{chatr-aryamontri_biogrid_2017}    & 188       & 279       & 1.484  & no & no    %& 0.674
+                            \\[.05cm] \cline{2-7}
+                                    & Mouse-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 1031      & 1497      & 1.452  & no & no    %& 0.689
+                            \\[.05cm] \cline{2-7}
+                                    & Human-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 3436      & 8254      & 2.402  & no & no    %& 0.416
+                            \\[.05cm] \cline{2-7}
+                                    & Human-PSICQUIC  \cite{aranda_psicquic_2011}        & 3470      & 6188      & 1.783  & no & no    %& 0.561
+                            \\[.05cm] \cline{2-7}
+                            %\\[.05cm] \cline{1-6}
+                    \end{tabular}
+                    \caption[Summary of database-sourced networks.]
+                            {
+                                Summary of real database-sourced networks. The direction and sign of an interaction were assigned at random (coin flip) in undirected and/or unsigned networks. References, data and source code publicly available in  \cite{atiia_case-study_2017}.
+                            }
+                    \label{tab:networks_summary_DB}
+        	\end{table}
+
+            \begin{figure}[H]%[!htb]
+                \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/DB_sourced/DB.png}
+                \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/DB_sourced/NH.png}
+                \\
+                \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/DB_sourced/NL.png}
+                \includegraphics[width=.49\textwidth]{02.degree-dist/Thesis/DB_sourced/RN.png}
+                \caption
+                        [
+                            Degree distribution of DB-sourced networks.
+                        ]
+                        {
+                            Degree distribution of DB-sourced networks  and their corresponding synthetic analogs: no-hubs (NH), no-leaves (NL) and random (RN).
+                        }
+                \label{fig:deg_dist_DB}
+            \end{figure}
+
+
+
+%end_custom_content
+\printbibliography
+\end{document}

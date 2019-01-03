@@ -1,0 +1,44 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Simulated adaptation}\label{sup_sim_adapt}
+        In these experiments, the simulated network evolution algorithm (see Figure SI \ref{sup-workflow}) starts with networks that have a number of nodes/edges equal that of a corresponding real MIN. The edges of the seed networks are initially randomly assigned. In each generation, only reassign-edge mutation is carried out (no add-node or add-edge mutations) as opposed to the simulated evolution experiments (Section SI \ref{sup_sim_evo}). Figures SI \ref{fig:sim_evo_adapt_4x} and \ref{fig:sim_evo_adapt_8x} show the degree distribution of the fittest synthetic network (labelled `Simulation') against that of the corresponding equal-size MIN after 4X and 8X generations of mutate-and-select, respectively, where  X equals the number of the nodes in the network. The degree distribution of the initial seed network is labeled 'Seed' in Figures SI \ref{fig:sim_evo_adapt_4x} and \ref{fig:sim_evo_adapt_8x}. The threshold $t$ of tolerated damaging interactions in the solution is kept at 5\% of the sum of all damages in all simulations, as was the case in the simulated evolution experiments of Section \ref{sup_sim_evo}.
+
+    	\begin{figure}[H]%[!htb]
+    			\centering
+    					\includegraphics[width=1.0\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/Adapt_simulations_x4_with_seed.png}
+    					\caption
+                            {
+                                Adapting synthetic networks for 4X generations of mutate-and-select where X is the total number of nodes in the networks. Simulation starts with the a network that has the same number of nodes and edges as the corresponding real MIN, but with edges randomly assigned to nodes. The  degree distribution of the synthetic (Simulation) shown here is that of the fittest network after 4X generation of mutate-only simulated adaptation. Increasing the number of generations does not significantly change the degree distribution (see Figure SI \ref{fig:sim_evo_adapt_8x}). The degree distribution of the initial seed network is labeled 'Seed'.
+                            }
+    					\label{fig:sim_evo_adapt_4x}
+    	\end{figure}
+
+\begin{figure}[H]%[!htb]
+        \centering
+                \includegraphics[width=1.0\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/Adapt_simulations_x4_with_seed.png}
+                \caption
+                    {
+                        The same simulation as that in Figure SI \ref{fig:sim_evo_adapt_4x} except that here the simulation is further continued for 4X more generations (hence the total number of generations is 8X the number of nodes in the network). Such increase in number of generations does not significantly change the degree distribution as opposed to simulations terminated after 4X generations (Figure SI \ref{fig:sim_evo_adapt_4x}). The degree distribution of the initial seed network is labeled 'Seed'.
+                    }
+                \label{fig:sim_evo_adapt_8x}
+\end{figure}
+
+%\newpage
+\clearpage %https://tex.stackexchange.com/questions/2958/why-is-newpage-ignored-sometimes
+%\noindent \large{\textbf{References:}}
+%\noindent See main text's Reference section
+
+%when biblatex
+%\printbibliography
+
+\newpage
+%when bibtex
+\bibliography{/Users/unbaxabl/Downloads/Publishing/z-misc/zotero-library/better_bibtex_standalone}
+\bibliographystyle{naturemag}
+
+\end{document}
+%end_custom_content

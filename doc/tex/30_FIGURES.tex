@@ -1,0 +1,129 @@
+\newpage
+\begin{comment}
+    \begin{table}[H]
+      %\setlength\arrayrulewidth{.1pt}\arrayrulecolor{myTableLines}
+           \begin{tabular}{r|l}
+                   \textbf{NPC}      & \myC{NP}-complete \\
+                   \textbf{MIN}      & Molecular interaction network \\
+                   \textbf{mLmH}     & majority-Leaves minority-Hubs network topology \\
+                   \textbf{OA}       & Oracle Advice \\
+                   \textbf{RVnRS}    & Random variation non-random selection \\
+                   \textbf{NEP}      & Network Evolution Problem \\
+                   \textbf{KOP}      & Knapsack Optimization Problem \\
+                   \textbf{PPI}      & Protein-protein interaction \\
+                   \textbf{NL}       & No-Leaf network \\
+                   \textbf{NH}       & No-Hub network \\
+                   \textbf{$amb$}    & ambiguous \\
+                   \textbf{EIS}      & Effective instance size \\
+                   \textbf{PSICQUIC} & Proteomics Standard Initiative Common QUery InterfaCe \\
+                  ${e2n}$            & edge:node ratio of a network \\
+           \end{tabular}
+    \end{table}
+\end{comment}
+
+\Large{Abbreviations:}
+
+{\centering\includegraphics[scale=.23,center]{z-misc/abbreviation.png}}
+\vspace{.1cm}
+\begin{figure}[H]%[!htbp]
+        \includegraphics[width=\textwidth]{/02.degree-dist/Science/intro_mLmH_with_star_annotations.png}
+        \caption{The majority-leaves minority-hubs (mLmH) topology in biological networks. Each dot represents the percentage of genes in the network having a given degree (number of interacting partners).  On average, an overwhelming majority (${\sim}$80\%) of leaf genes interact with at most 1-3 other genes, and a small elite minority (${\sim}$6\%) of hub genes interact with at least 10 other genes. All networks originate from experimental procedures (i.e. none contains \textit{in-silico}-inferred interactions), and all interactions are direct and physical. PPI and Regulatory networks are obtained from large-scale experimental studies reported in a single source in the literature, while interactions in database-sourced networks may have originated from more than one source (see SI \ref{I-sup_realnets} for details and literature references of each networks). Directed and signed networks are marked with $*$ and $\pm$ respectively. The direction and sign were assigned at random (coin flip) in undirected/unsigned networks; some interactions in TRRUST are unsigned and hence were also assigned as random. Data and source code pertaining of all networks are publicly available in  \cite{atiia_case-study_2017}.
+        }
+        \label{mLmH_fig}
+\end{figure}
+
+\begin{figure}[H]%[!htbp]
+    \centering
+    \includegraphics[width=\textwidth]{/00.introductory_figure/fancy/intro_removed_g2_to_g4_reversed_A_and_B_edited_A.png} % original width= 42.65cm,  height = 19.86cm ==> heigh:width = 45.5%
+    \caption{
+                The network evolution problem (NEP).
+                \textbf{(A)} Left: an example network of seven genes $G={g_1,g_2, .., g_7}$ that is under some hypothetical evolutionary pressure described by an Oracle advice (OA) $A=(0,+1,-1,+1,0,0,-1)$ indicating that genes $g_2,g_4$ and $g_3,g_7$ should be promoted and inhibited respectively (notice +1 and -1 values in OA;  $a_i\in A$ is the Oracle's opinion on gene $g_i$). Centre: the network graph in an equivalent adjacency matrix representation; green or red entry indicates the interaction is in agreement or disagreement, respectively,  with the OA (e.g. $m_{14}=-1$ in disagreement with $a_4=+1$). Right: benefit/damage scores equal the sum of beneficial/damaging interactions $g_i$ is projecting onto or attracting from other genes (counting along row $i$ for projection and column $i$ for attraction; $g_3$'s scores  highlighted by dotted frames as an example).
+                \textbf{(B)}, a knapsack optimization problem (KOP) instance; the challenge is to determine the objects to include in and exclude from the limited-capacity knapsack so as to maximize the overall total value while keeping the overall total weight of included items under the knapsack's capacity threshold (5 lb). This KOP instance is reducible to the NEP instance in \textbf{A}; objects/values/weights/capacity correspond to the genes/benefits/damages in \textbf{A}  (e.g. laptop in \textbf{B} corresponds to gene $g_2$ in \textbf{A}). Solving the question `which genes to conserve and which to delete' in \textbf{A} translates into a solution to the KOP instance in \textbf{B}. NEP instance optimal solution, with a threshold $\leq$5 damaging interactions, is to conserve genes $g_2, g_4,  g_5$, $g_6$ and delete $g_1, g_3$  $g_7$, which respectively translate back to an optimal solution to the KOP instance: include in the knapsack the laptop, lunch box, pen and water bottle, and exclude from it the notebook, textbook, and candle.
+                \textbf{(C)} and \textbf{(D)}, NEP can semantically be interpreted in the context of (C) regulation (which genes or interactions should be fine-tuned positively or negatively) or (D) evolution (which genes or interactions represent an asset or a liability to the system long-term). The formal definition of NEP and a generalized reduction of KOP to NEP are included in SI \ref{I-sup_NEP_definition} and \ref{I-KOPdefinition} respectively. See main text and SI \ref{I-matrix_OA} for interaction-targeting OA (as opposed to gene-targeting OA here in A). }
+    \label{fig:intro_fancy}
+    \end{figure}
+
+\begin{figure}[H]%[!htbp]
+        \begin{overpic}[width=\textwidth]{/02.degree-dist/Science/final.png}
+    			\put (0,78) {
+                    \parbox[l]{.35\textwidth}{
+                        \small{
+                                        \textbf{(A)} Degree distribution of an example MIN (Fly protein-protein interaction (PPI) network) and its corresponding synthetic analogs;  orange (blue) bars represent the \% of nodes with degree $=d$ ($>d$). NL (NH) networks have a minimum (maximum) degree  $>$ ($\leq$) the average degree in the PPI network (${\sim}=4$). PPI nodes have majority low-degree nodes (${\sim}78$\% with degree $\leq$ 4); degrees in RN  cluster around the average degree due to re-assignment of each edge in PPI to two nodes selected uniformly randomly. \textbf{(B-D)} The degree distribution of  synthetic analog networks corresponding to  each real MIN from the protein-protein (B), regulatory (C), and database-sourced (D)  categories as shown in Figure \ref{mLmH_fig}.
+                                    }
+                            }
+                        }
+        \end{overpic}
+
+    \caption{Case study networks.}
+    \label{deg_dist}
+\end{figure}
+
+\begin{figure}[H]%[t]
+    \includegraphics[width=\textwidth]{04.scatter/Science/processed_PPIs.png}
+    \caption{
+                Benefit-damage correlation as an instance difficulty measure. \textbf{(A)} Value-weight correlation
+                in classical knapsack instances;  the stronger the correlation the computationally harder the instances \cite{pisinger_where_2005}. \textbf{(B)} Benefit-damage correlation in NEP instances from PPI networks and corresponding synthetic analogs. The \% of genes having a given (benefit,damage) score, $(b,d)$, in an NEP instance (averaged over 1-5K instances). Size and colour of each dot reflects frequency of that $(b,d)$ pair (see bottom-right legend). ${\sim}50\%$ of all $(b,d)$ pairs in Fly PPI network for example are unambiguous ($b=0$,$d\neq 0$ or $b\neq 0$,$d=0$) largely due to leaf genes of degree 1 (alone contributing on average ${\sim}43\%$, large yellow dots in Fly subplot). In contrast, the fraction of unambiguous $(b,d)$ pairs in NH, NL, and RN are ${\sim}15.6, {\sim}3.1,$ and ${\sim}28 \%$,
+                respectively, as their most frequent $(b,d)$ pairs cluster around dominant degrees (a ($b$,$d$) pair is contributed by nodes of degree $d$=$b$+$d$). Leaf-deprived NL network manifests the strongest $(b,d)$ correlation given the range of ambiguity that most of its nodes (clustered they are around NL's relatively higher mean of ${\sim}12$) can assume. The symmetry along the diagonal is expected given that there is an equal probability of $50\%$ that an interaction is beneficial or damaging under a random Oracle advice on the gene that interaction is targeting.
+             }
+    \label{scatter}
+\end{figure}
+
+
+%\setlength{\textfloatsep}{0pt plus 0.0pt minus 0.0pt}\setlength{\floatsep}{0pt plus 0.0pt minus 0.0pt}\setlength{\intextsep}{0pt plus 0.0pt minus 0.0pt}
+\begin{figure}[H]%[t]
+    \includegraphics[width=\textwidth]{/05.instance_size/NatureSysBio/EIS/EIS_fixed_Fly.png}
+    \caption{
+                Effective instance size (EIS). \textbf{(A)} left pie charts: fraction of nodes in NEP instances having a certain benefit:damage ($b$:$d$) ratio (bottom legend) in the Fly PPI network and its synthetic analogs. The subset of nodes that need to be optimized over (those in all but 100:0, 0:100 slices) is significantly smaller in leaf-rich PPI (Fly) instances. Virtually all nodes in leaf-deprived NL network are ambiguous (${\sim}0\%$ nodes under 100:0 or 0:100 $b$:$d$ ratios); right bar charts: break down of genes contributing to each $b$:$d$ ratio slice in the corresponding pie chart, broken by gene degree (bottom legend); leaves dominate 100:0 and 0:100 slices in PPI. Because all nodes in NH network have degrees  $\leq$ 4, no $b$:$d$ ratio of any gene can fall in the 90:10/10:90 or 80:20/20:80  slices. \textbf{(B)} EIS for all networks; bar height represents the ambiguous pie slices in (A); each bar group corresponds to a MIN along with its corresponding NH, NL and RN analogs. In all networks, EIS is significantly smaller in real MINs  compared to synthetic analogs. RN networks have more leaves (by sheer random re-assignment of edges in their creation) and therefore have  smaller EIS compared to NL and NH.% (e.g. Human and Yeast PPI networks have 1.45 and 3.24 $e2n$ ratios respectively).
+             }\label{wheel}
+\end{figure}
+
+
+%total_search_space, effective_search_space = 0,0
+%  for b,d in zip(Bs,Ds):
+%      total_search_space     += 1
+%      #if b>0 or d>0: # only relevant genes
+%      effective_search_space += 1-(abs(b-d)/(b+d))
+%  sSpace['fractions'].append((total_search_space,effective_search_space))
+\begin{figure}[H]%[t]
+    \includegraphics[width=\textwidth]{14_search_space/processed/one.png}\\
+    \includegraphics[width=\textwidth]{14_search_space/processed/two.png}
+    \caption{
+                  Search space size.
+                  The total search space (grey) of a given NEP instance is quantified as $S_t = 2^{O(n)}$ where $n$ is the number of genes in the instance with either benefit score $b>0$ or damage score $d>0$.
+                  %
+                  Effective search space (blue) is  defined as $S_e=2^{O(m)}$ where $m\leq n=\sum\limits_{i=1}^{n}{1-\delta_i}$ and  ${\delta}_i=\frac{|b_i-d_i|}{b_i+d_i}$ is the ambiguity measure of $g_i$ under the current NEP instance ($b_i,d_i$ are the benefit,damage scores of gene $g_i$). Networks are grouped by size for better $y$-axis readability. Note that the $y-$axis values are logarithmic in base 2, and hence linear differences between bar heights imply exponential differences in $S_t$ or $S_e$. Smaller  but denser NL networks have smaller $S_t$ relative to other networks but suffer from having extremely high $S_e$:$S_t$ ratio due to the high ambiguity of its nodes under NEP instances. Biological networks have exponentially smaller $S_e$:$S_t$ ratio relative to corresponding NL, NH, and RN random analogs  by virtue their having a higher number of leave nodes, particularly genes of degree 1-3, which are more likely to be unambiguously beneficial or damaging under a given NEP instance, and as such have relatively higher $\delta$ values ($=$ smaller $m$ exponent overall).
+             }\label{fig:search_space}
+\end{figure}
+
+\begin{figure}[H]%[t]%[!htb]
+        \centering
+                \includegraphics[width=1.0\textwidth]{05.instance_size/NatureSysBio/neutrality/combined.png}
+                \singlespacing\caption
+                {
+                    Neutrality of genes under evolutionary pressure. \textbf{(A)} NEP instances are generated with 0, 25, 50, and 75\% of genes being neutral (the Oracle has no opinion on them). A neutral gene may nonetheless end up having a non-zero benefit and/or damage score in an NEP instance depending on its interactivity with non-neutral genes. The bar height represents the average EIS (see Figure \ref{wheel}). As the pressure increases (i.e. as the percentage of neutral genes decreases), the supremacy of real MINs compared to random analogs (no-hubs (NH), no-leaves(NL) and random (RN) networks) is more pronounced. \textbf{(B)} A zoomed-in view to the constituent nodes in each $b$:$d$ ratio range for the Fly simulations. In the real MIN (Fly), as the pressure increases from 75\% to 0\% of genes being neutral, the utility of leaf genes becomes more pronounced as they dominate the 100:0 and 0:100 slices.
+                }
+                \label{fig:neutrality}
+\end{figure}
+
+\begin{figure}[H]%[t]
+        \centering
+        \includegraphics[width=\textwidth]{08.deg_dist_prediction/Science/v2/temp.png}
+        %\includegraphics[scale=.17]{08.deg_dist_prediction/PNAS/alphabeta/{alpha.beta.n2e.e2n_networks_originals_with_TRRUST}.png}
+        \caption{
+            Computational intractability as a predictive tool of degree distribution. \textbf{(A)} The percentage of nodes having a degree $d$ in Fly PPI network; the fraction of degree-$d$ nodes is inversely proportional to the potential optimization ambiguity that a degree-$d$ node adds to instances of NEP (see text). \textbf{(B)} Accuracy of predicting the degree distribution of PPI (top), regulatory (middle) and DB-sourced (bottom) networks (degree distribution plots of all networks is included in SI \ref{I-sup_prediction}).  Accuracy = 100 - $\sum |predicted(d)-actual(d)|$ over each degree $d$ in the network ($predicted(d)=E(d)$ (see text) and $actual(d)$=the fraction of genes having degree $d$). \textbf{(C)} Proportionality of $\alpha, \beta$   to edge:node ($e2n$) and node:edge ($n2e$) ratios ($n2e=e2n^1$), respectively, in the prediction formula $E(d)$. The average$\pm$SD  of ($\alpha$ vs. $n2e$), ($\beta$ vs. $e2n$) are (0.43$\pm$0.063 vs. 0.526$\pm$0.133), (1.96$\pm$0.324 vs. 2.06$\pm$0.634) respectively.  }
+        \label{predict_figure}
+        \label{ambig}
+\end{figure}
+
+
+\begin{figure}[H]%[h]
+    \centering
+    \includegraphics[width=\textwidth]{11.ACM-BCB/Science/v2/src/plot_groups/png/selected-bars_annotated.png}%origina ratio 1:0.77 width:height
+
+    \caption{
+        Evolvability under NEP selection pressure. Networks start empty and periodically undergo reassign-edge, add-node, add-edge mutations. An evolving network grows by adding one node, and one or more edges while maintaining an edge:node ratio equalling that of the corresponding real MIN. The simulation terminates when networks reach the same size (number of nodes) as that of the corresponding real MIN. The final degree distribution of the fittest network is illustrated (vertical blue dashes) against that of the corresponding MIN (horizontal pink dashes). Networks in row 1, 2 and 3 are protein-protein, regulatory, and database-sourced, respectively. The complete results for all other networks is included in SI \ref{I-sup_sim_evo}.
+    }
+    \label{evol_figure}
+\end{figure}
+
+\newpage

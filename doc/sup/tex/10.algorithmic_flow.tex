@@ -1,0 +1,61 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+%\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\headsep}{0pt}\setlength{\topskip}{0pt}\setlength{\topmargin}{0pt}\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}
+
+%\titlespacing{\section}{0pt}{*0}{*0}\titlespacing{\subsection}{0pt}{*0}{*0}\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\section{Simulating Evolutionary Pressure}\label{sup_algorithmic_workflow}
+
+%\setlength{\parskip}{0pt}\setlength{\parsep}{0pt}\setlength{\headsep}{0pt}\setlength{\topskip}{0pt}\setlength{\topmargin}{0pt}\setlength{\topsep}{0pt}\setlength{\partopsep}{0pt}
+
+%\titlespacing{\section}{0pt}{*0}{*0}\titlespacing{\subsection}{0pt}{*0}{*0}\titlespacing{\subsubsection}{0pt}{*0}{*0}
+%\parbox[t]{\textwidth}{
+
+			The simulation
+			\footnote{\scriptsize{Computations were made on the supercomputing cluster Guillimin from McGill University, managed by Calcul Québec and Compute Canada. The operation of these supercomputers is funded by the Canada Foundation for Innovation (CFI), ministère de l’Économie, de la Science et de l’Innovation du Québec (MESI) and the Fonds de recherche du Québec - Nature et technologies (FRQ-NT).}}
+            has the parameter tolerance $t$, expressed as percentages of total edges,  indicating the total number damaging interactions to
+			be tolerated (equivalently, the knapsack capacity $c$ in the
+			corresponding KOP instance).
+			For each network, the simulation is carried out under maximum pressure (non-zero OA on every gene)
+			against each $t \in {0.1, 1, 5}\%$.
+			Given a tolerance value $t$, a knapsack instance is generated from a given NEP instance by reversing the reduction;
+			that is: $O=G, V=B, W=D$ and $c=t$. The simulation records the total benefit and damage of objects (=genes, recall $O=G$)
+			added to the knapsack by the solver  \cite{pisinger_where_2005} for each round against a randomly generated Oracle advice on each gene.
+			The simulation is repeated for 1-5K iterations (sampling threshold, see Section \ref{sup_1Kvs5K}). Figure SI \ref{sup_alg_workflow_fig} summarizes the algorithmic workflow of the simulation.
+			%Scrambling of instances is done by randomly distributing the total benefit and damage values in a given instance over all of the genes, in increment of 1. For example, given a total benefits of all genes = $B$, and after all benefit scores are  zeroed out, a benefit of 1 is randomly assigned to a gene $B$ times. The same scrambling scheme is carried out for damages.
+
+%			\begin{comment}
+
+%			\end{comment}
+			\begin{figure}[H]
+				%\begin{overpic}[width=0.5\textwidth,grid,tics=10]{algorithmic_workflow/algorithmic_workflow.pdf}
+				%\begin{overpic}[width=16.5cm, height=15.5cm, right]{algorithmic_workflow/algorithmic_workflow_cropped.pdf}
+				%\begin{overpic}[scale=.7, right]{01.algorithmic_workflow/algorithmic_workflow_cropped3.pdf}
+				\begin{overpic}[width=.9\textwidth, height=13cm, right]{01.algorithmic_workflow/PNAS/combined-flow-and-runtime.png}
+					\put (0,51) {
+						\parbox[l]{.57\textwidth}{
+							\scriptsize{% \tiny, \scriptsize, \footnotesize, \small, \normalsize, \large, \Large, \LARGE, \huge, and \Huge.
+					            \textbf{right}: Simulations are carried at a certain pressure. Maximum pressure is when the Oracle has a non-zero advice on all nodes. Some simulations were carried at lower pressure levels where the Oracle is indifferent to 25, 50, 0r 75\% of genes.
+					            For each tolerance $t$ value, 1-5K simulation rounds are carried out. In each round,
+					            a random OA is generated on all genes (nodes), followed by a calculation of benefit/damage
+					            value for each node against the current OA. The resulting NEP instance is reverse-reduced
+					            to a KOP instance ($O=G_i, V=B_i, W=D_i, c=t_i$) and fed to a knapsack solver.
+								In each round, the sequences $G_i, B_i, D_i, t_i,$ and $S_i$ are written to file, where $S_i$ is the solution vector
+								$(s_1, \dots, s_k), k=|G_i|,$ and $s_i\in\{0,1\}$. $s_i=1$ ($s_i=0)$ implies "conserve" ("delete") or, in the context of the knapsack problem, "inside" ("outside") the knapsack.
+								\newline
+								\textbf{below}:	average algorithm running time in milliseconds for each network.
+								'S' denotes an identical simulation on a second computer cluster different from the first run. For $t$=0.1\%, the execution times are too negligible as a result of the  dynamic programming algorithm  \cite{pisinger_where_2005}  being upper-bounded by an exponent  = $O(c)$ value. We therefore carried out the simulation at higher tolerance values $t\in\{5, 25, 50\} \%$. NL has significantly less nodes compared to other networks, and therefore shows the smallest execution times. PPI, RN and NH have ${\sim}$equal network sizes, but instances in PPI are solved faster compared to to its smaller instance sizes (a majority of genes being having either benefit (damage) as zero, and therefore such genes are not part of the optimization search as they should be conserved (deleted) regardless, see discussion on effective instance size (EIS) in the main text for details).
+								}
+						}
+					}
+				\end{overpic}
+				\caption{The algorithmic workflow of computer simulation and the average run time of the knapsack solver.}
+				\label{sup_alg_workflow_fig}
+			\end{figure}
+
+%end_custom_content
+\end{document}
+\printbibliography

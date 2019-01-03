@@ -1,0 +1,1 @@
+- reference each result subsection in its corresponding summary paragraph in the Result section

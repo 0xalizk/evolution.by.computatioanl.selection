@@ -1,0 +1,44 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+		\subsection{Proof}\label{sup_proof}
+
+				%\noindent$\normalsize\boldsymbol{Proof:}$
+
+				\vspace{5pt}
+				\small{\noindent I. Define $\boldsymbol{\gamma}:\{1,..,r\}\rightarrow \{1,..,r\}$ \mys s.t. $\forall i, 1\leq i <r: w_{\gamma(i)} \leq w_{\gamma(i+1)}$
+
+							\noindent II. Let $\boldsymbol{G}=\boldsymbol{O}+\{o_{r+1}\}$, \mys $\boldsymbol{t}=\boldsymbol{c}$,\mys $\boldsymbol{A}=(a_1,\dots,a_r, a_{r+1})$, \mys where \mys $a_{r+1}=0$ \mys and \mys $\forall i\leq r,$\mys$a_i=+1$
+
+							\noindent III. Let $\boldsymbol  {M}$ \mys be a $d\times d$ zero-matrix, $d=r+1$. Populate $M$ as follows:
+
+								\noindent\hspace{20pt}1. Repeat for \mys$i=1$\quad to\quad $i=r-1$:
+							\setlength{\belowdisplayskip}{0pt} %\setlength{\belowdisplayshortskip}{0pt}\setlength{\abovedisplayskip}{0pt} \setlength{\abovedisplayshortskip}{0pt}
+							%\begin{siderules}
+							\begin{alignat*}{7}
+										\qquad\qquad & j\mys       & \leftarrow\mys\mys   & \gamma(i)   & \mys\text{and} \quad\mys\mys & k\mys       & \leftarrow\mys\mys   & \gamma(i+1) \\
+										\qquad\qquad & m_{jj}\mys  & \leftarrow\mys\mys   & v_j         & \mys\text{and} \quad\mys\mys & m_{jk}\mys  & \leftarrow\mys\mys   & -w_j \\
+										\qquad\qquad & w_{k}\mys   & \leftarrow\mys\mys   & w_{k} - w_j & \mys                         &\mys         & \mys                 & \mys
+							\end{alignat*}
+                            %\end{siderules}
+							\noindent\hspace{20pt}2. $j\leftarrow\gamma(r)$, $m_{jj}\leftarrow v_j$, $m_{dj}\leftarrow -w_j$
+
+							\noindent IV. Calculate $\boldsymbol{B}$, $\boldsymbol{D}$ and define $\boldsymbol{f}:\boldsymbol{G}  \rightarrow \{0,1\}$ (Section \ref{sup_NEP_definition}).
+
+							\noindent V. Return $(f(o_1), \dots, f(o_r))$ as KOP's solution vector \hspace{5pt}$\blacksquare$
+						}
+
+						\vspace{4pt}\noindent Proof notation follows that in KOP (above) and NEP (Section \ref{sup_NEP_definition}) definitions.
+
+			%\begin{comment}
+\subsection{Reverse-Reducing NEP To KOP}\label{reverse_reduction}
+			While the KOP-to-NEP reduction proves the later to belong to the same complexity class as
+			the former, NEP-to-KOP reduction allows the use of an existing well-known pseudo-polynomial dynamic-programming algorithm  \cite{pisinger_where_2005}
+			to solve instances of the former. NEP can be reverse-reduced to KOP by setting $O=G, V=B, W=D$, and \textbf{$c=t$}.
+
+			%\end{comment}
+%end_custom_content
+\printbibliography
+\end{document}

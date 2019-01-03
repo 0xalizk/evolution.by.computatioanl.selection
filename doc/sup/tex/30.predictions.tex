@@ -1,0 +1,60 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Predicted vs. actual degree distributions}\label{sup_prediction}
+
+        Figures SI \ref{fig:predictions_PPIs}, \ref{fig:predictions_Regulatory} and \ref{fig:predictions_DBsourced} show detailed plots of the actual versus predicted degree distribution of PPI, regulatory and DB-sourced networks, respectively, along with detailed bar plots of each $(\alpha,\beta)$ values used in the prediction formula and their respective proportionality to the node:edge $(n2e)$
+        and edge:node $(e2n)$ ratios in each networks.
+        The $(\alpha,\beta)$ values were  numerically determined by considering each $\alpha$ in the interval [0.01, 1] in increments of 0.01 against each $\beta$ in [0.1, 10] interval in increments of 0.1.
+        %The $(\alpha,\beta)$ that produced the best prediction correlates closely with $(n2e,e2n)$ for most networks as seen in the bar plots in Figures SI \ref{fig:predictions_PPIs}, \ref{fig:predictions_Regulatory} and \ref{fig:predictions_DBsourced}.
+        Hub prediction may visually appear  to be less precise but that is only due to the log scale in the y-axis. High discrepancies between $(\alpha,\beta)$ and $(n2e,e2n)$ values can be used to infer the quality of coverage and resolution of a network, and the extend to which it represents a representative sample the overall true and complete network. For example, $e2n >> \beta$ for the Yeast BioGrid network (Figure SI \ref{fig:predictions_DBsourced}, right bar plot). Examining the degree distribution of this network (Figure SI \ref{fig:deg_dist_DB}), the frequency of degree-1 nodes is significantly low (${\sim}19\%$) compared to all other networks (DB-sourced, regulatory or PPI networks, where degree-1 frequency is 44$\pm$10\%). The Worm BioGrid network on the other hand, has $\beta >> e2n$, which can be explained by the under representation of hub nodes in its network (it has no genes of degree $\geq$ 9, while on average 8$\pm$5\% of genes in other networks have degree $\geq$9).
+        %In a future work, we are using the $(n2e,e2n)$ values of the highly resolute Human Iso network reported by Yang et \textit{al.}  \cite{yang_widespread_2016} as gold-standard $(\alpha,\beta)$ values in order to estimate the quality of coverage of resolution of other networks (further discussed in Section \ref{sec:conclusion_applications}).
+        %
+
+    	\begin{figure}[H]%[!htb]
+    			\centering
+    					\includegraphics[width=1.0\textwidth]{08.deg_dist_prediction/Thesis/ch3/predictions/PPIs/processed/combined_predictions_alpha_beta_n2e_e2n.png}
+    					\caption
+                            [
+                                Actual and predicted degree distribution of PPI networks.
+                            ]
+                            {
+                                Actual and predicted degree distribution of PPI networks. The bar plots (bottom) show the $\alpha$ and $\beta$ values in the predicted networks versus the node:edge ($n2e$) and edge:node ($e2n$) ratios of the real networks.
+                            }
+    					\label{fig:predictions_PPIs}
+    	\end{figure}
+
+%\subsection{regulatory networks}
+        \begin{figure}[H]%[!htb]
+                \centering
+                        \includegraphics[width=1.0\textwidth]{08.deg_dist_prediction/Thesis/ch3/predictions/Regulatory/processed/combined_predictions_alpha_beta_n2e_e2n.png}
+                        \caption
+                            [
+                                Actual and predicted degree distribution of regulatory networks.
+                            ]
+                            {
+                                Actual and predicted degree distribution of regulatory networks. The bar plots (bottom) show the $\alpha$ and $\beta$ values in the predicted networks versus the node:edge ($n2e$) and edge:node ($e2n$) ratios of the real networks.
+                            }
+                        \label{fig:predictions_Regulatory}
+        \end{figure}
+
+%\subsection{database-souced networks}
+        \begin{figure}[H]%[!htb]
+                \centering
+                        \includegraphics[width=1.0\textwidth]{08.deg_dist_prediction/Thesis/ch3/predictions/DBsourced/processed/combined_predictions_alpha_beta_n2e_e2n.png}
+                        \caption
+                        [
+                            Actual and predicted degree distribution of database-sourced networks.
+                        ]
+                        {
+                            Actual and predicted degree distribution of database-sourced networks. The bar plots (bottom) show the $\alpha$ and $\beta$ values in the predicted networks versus the node:edge ($n2e$) and edge:node ($e2n$) ratios of the real networks.
+                        }
+                        \label{fig:predictions_DBsourced}
+        \end{figure}
+
+%end_custom_content
+\printbibliography
+\end{document}

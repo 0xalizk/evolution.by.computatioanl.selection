@@ -1,0 +1,177 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{atiia_case-study_2017}
+\bibinfo{author}{Atiia, A.}
+\newblock \bibinfo{title}{Case-{Study} {Biolgical} {Networks}
+  http://cs.mcgill.ca/~malsha17/permlink/networks/} (\bibinfo{year}{2017}).
+\newblock \urlprefix\url{http://cs.mcgill.ca/~malsha17/permlink/NETWORKS/}.
+
+\bibitem{rolland_proteome-scale_2014}
+\bibinfo{author}{Rolland, T.} \emph{et~al.}
+\newblock \bibinfo{title}{A proteome-scale map of the human interactome
+  network}.
+\newblock \emph{\bibinfo{journal}{Cell}} \textbf{\bibinfo{volume}{159}},
+  \bibinfo{pages}{1212--1226} (\bibinfo{year}{2014}).
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0092867414014226}.
+
+\bibitem{yang_widespread_2016}
+\bibinfo{author}{Yang, X.} \emph{et~al.}
+\newblock \bibinfo{title}{Widespread {Expansion} of {Protein} {Interaction}
+  {Capabilities} by {Alternative} {Splicing}}.
+\newblock \emph{\bibinfo{journal}{Cell}} \textbf{\bibinfo{volume}{164}},
+  \bibinfo{pages}{805--817} (\bibinfo{year}{2016}).
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0092867416300435}.
+
+\bibitem{vinayagam_integrating_2014}
+\bibinfo{author}{Vinayagam, A.} \emph{et~al.}
+\newblock \bibinfo{title}{Integrating protein-protein interaction networks with
+  phenotypes reveals signs of interactions}.
+\newblock \emph{\bibinfo{journal}{Nature methods}}
+  \textbf{\bibinfo{volume}{11}}, \bibinfo{pages}{94--99}
+  (\bibinfo{year}{2014}).
+\newblock
+  \urlprefix\url{http://www.nature.com/nmeth/journal/v11/n1/abs/nmeth.2733.html}.
+
+\bibitem{consortium_evidence_2011}
+\bibinfo{author}{Consortium, A. I.~M.}
+\newblock \bibinfo{title}{Evidence for {Network} {Evolution} in an
+  {Arabidopsis} {Interactome} {Map}}.
+\newblock \emph{\bibinfo{journal}{Science}} \textbf{\bibinfo{volume}{333}},
+  \bibinfo{pages}{601--607} (\bibinfo{year}{2011}).
+\newblock \urlprefix\url{http://science.sciencemag.org/content/333/6042/601}.
+
+\bibitem{rajagopala_binary_2014}
+\bibinfo{author}{Rajagopala, S.~V.} \emph{et~al.}
+\newblock \bibinfo{title}{The binary protein-protein interaction landscape of
+  {Escherichia} coli}.
+\newblock \emph{\bibinfo{journal}{Nature biotechnology}}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{285--290}
+  (\bibinfo{year}{2014}).
+\newblock
+  \urlprefix\url{http://www.nature.com/nbt/journal/v32/n3/abs/nbt.2831.html}.
+
+\bibitem{yu_high-quality_2008}
+\bibinfo{author}{Yu, H.} \emph{et~al.}
+\newblock \bibinfo{title}{High-{Quality} {Binary} {Protein} {Interaction} {Map}
+  of the {Yeast} {Interactome} {Network}}.
+\newblock \emph{\bibinfo{journal}{Science}} \textbf{\bibinfo{volume}{322}},
+  \bibinfo{pages}{104--110} (\bibinfo{year}{2008}).
+\newblock \urlprefix\url{http://science.sciencemag.org/content/322/5898/104}.
+
+\bibitem{simonis_empirically_2009}
+\bibinfo{author}{Simonis, N.} \emph{et~al.}
+\newblock \bibinfo{title}{Empirically controlled mapping of the
+  \textit{{Caenorhabditis} elegans} protein-protein interactome network}.
+\newblock \emph{\bibinfo{journal}{Nature Methods}}
+  \textbf{\bibinfo{volume}{6}}, \bibinfo{pages}{47--54} (\bibinfo{year}{2009}).
+\newblock \urlprefix\url{https://www.nature.com/articles/nmeth.1279}.
+
+\bibitem{gerstein_architecture_2012}
+\bibinfo{author}{Gerstein, M.~B.} \emph{et~al.}
+\newblock \bibinfo{title}{Architecture of the human regulatory network derived
+  from {ENCODE} data}.
+\newblock \emph{\bibinfo{journal}{Nature}} \textbf{\bibinfo{volume}{489}},
+  \bibinfo{pages}{91--100} (\bibinfo{year}{2012}).
+\newblock
+  \urlprefix\url{https://www.nature.com/nature/journal/v489/n7414/full/nature11245.html}.
+
+\bibitem{han_trrust:_2015}
+\bibinfo{author}{Han, H.} \emph{et~al.}
+\newblock \bibinfo{title}{{TRRUST}: a reference database of human
+  transcriptional regulatory interactions}.
+\newblock \emph{\bibinfo{journal}{Scientific reports}}
+  \textbf{\bibinfo{volume}{5}} (\bibinfo{year}{2015}).
+\newblock
+  \urlprefix\url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4464350/}.
+
+\bibitem{gama-castro_regulondb_2016}
+\bibinfo{author}{Gama-Castro, S.} \emph{et~al.}
+\newblock \bibinfo{title}{{RegulonDB} version 9.0: high-level integration of
+  gene regulation, coexpression, motif clustering and beyond}.
+\newblock \emph{\bibinfo{journal}{Nucleic Acids Research}}
+  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{D133--D143}
+  (\bibinfo{year}{2016}).
+\newblock
+  \urlprefix\url{https://academic.oup.com/nar/article/44/D1/D133/2502650/RegulonDB-version-9-0-high-level-integration-of}.
+
+\bibitem{liu_regnetwork:_2015}
+\bibinfo{author}{Liu, Z.-P.}, \bibinfo{author}{Wu, C.}, \bibinfo{author}{Miao,
+  H.} \& \bibinfo{author}{Wu, H.}
+\newblock \bibinfo{title}{{RegNetwork}: an integrated database of
+  transcriptional and post-transcriptional regulatory networks in human and
+  mouse}.
+\newblock \emph{\bibinfo{journal}{Database}} \textbf{\bibinfo{volume}{2015}}
+  (\bibinfo{year}{2015}).
+\newblock
+  \urlprefix\url{https://academic.oup.com/database/article/doi/10.1093/database/bav095/2433227}.
+
+\bibitem{chou_mirtarbase_2016}
+\bibinfo{author}{Chou, C.-H.} \emph{et~al.}
+\newblock \bibinfo{title}{{miRTarBase} 2016: updates to the experimentally
+  validated {miRNA}-target interactions database}.
+\newblock \emph{\bibinfo{journal}{Nucleic Acids Research}}
+  \textbf{\bibinfo{volume}{44}}, \bibinfo{pages}{D239--D247}
+  (\bibinfo{year}{2016}).
+\newblock
+  \urlprefix\url{https://academic.oup.com/nar/article/44/D1/D239/2503072/miRTarBase-2016-updates-to-the-experimentally}.
+
+\bibitem{chatr-aryamontri_biogrid_2017}
+\bibinfo{author}{Chatr-aryamontri, A.} \emph{et~al.}
+\newblock \bibinfo{title}{The {BioGRID} interaction database: 2017 update}.
+\newblock \emph{\bibinfo{journal}{Nucleic Acids Research}}
+  \textbf{\bibinfo{volume}{45}}, \bibinfo{pages}{D369--D379}
+  (\bibinfo{year}{2017}).
+\newblock \urlprefix\url{http://www.ncbi.nlm.nih.gov/pmc/articles/PMC5210573/}.
+
+\bibitem{aranda_psicquic_2011}
+\bibinfo{author}{Aranda, B.} \emph{et~al.}
+\newblock \bibinfo{title}{{PSICQUIC} and {PSISCORE}: accessing and scoring
+  molecular interactions}.
+\newblock \emph{\bibinfo{journal}{Nature Methods}}
+  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{528--529}
+  (\bibinfo{year}{2011}).
+\newblock
+  \urlprefix\url{http://www.nature.com/nmeth/journal/v8/n7/full/nmeth.1637.html}.
+
+\bibitem{karp_reducibility_2010}
+\bibinfo{author}{Karp, R.~M.}
+\newblock \bibinfo{title}{Reducibility {Among} {Combinatorial} {Problems}}.
+\newblock \emph{\bibinfo{journal}{50 Years of Integer Programming 1958-2008}}
+  \bibinfo{pages}{219--241} (\bibinfo{year}{2010}).
+\newblock
+  \urlprefix\url{http://www.springerlink.com/index/L45H7011865P0257.pdf}.
+
+\bibitem{pisinger_where_2005}
+\bibinfo{author}{Pisinger, D.}
+\newblock \bibinfo{title}{Where are the hard knapsack problems?}
+\newblock \emph{\bibinfo{journal}{Computers \& Operations Research}}
+  \textbf{\bibinfo{volume}{32}}, \bibinfo{pages}{2271--2284}
+  (\bibinfo{year}{2005}).
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S030505480400036X}.
+
+\bibitem{kallenberg_foundations_2006}
+\bibinfo{author}{Kallenberg, O.}
+\newblock \emph{\bibinfo{title}{Foundations of modern probability}}
+  (\bibinfo{publisher}{Springer Science \& Business Media},
+  \bibinfo{year}{2006}).
+
+\bibitem{atiia_computational_2017-1}
+\bibinfo{author}{Atiia, A.}, \bibinfo{author}{Hopper, C.} \&
+  \bibinfo{author}{Waldispühl, J.}
+\newblock \bibinfo{title}{Computational {Intractability} {Generates} the
+  {Topology} of {Biological} {Networks}}.
+\newblock In \emph{\bibinfo{booktitle}{Proceedings of the 8th {ACM}
+  {International} {Conference} on {Bioinformatics}, {Computational} {Biology},
+  and {Health} {Informatics}}}, \bibinfo{pages}{500--509}
+  (\bibinfo{publisher}{ACM}, \bibinfo{year}{2017}).
+\newblock \urlprefix\url{http://dl.acm.org/citation.cfm?id=3107453}.
+
+\end{thebibliography}

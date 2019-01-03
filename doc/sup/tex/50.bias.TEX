@@ -1,0 +1,29 @@
+\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+%begin_custom_header
+%end_custom_header
+\begin{document}
+%begin_custom_content
+\newpage
+\section{Hub-favorable Oracle}\label{sup_biased_oracle}
+When generating a random OA on gene $g_i$, the likelihood of it being  considered advantageous (i.e. $a_i = +1$) is proportional
+to how large the degree of $g_i$ relative to the mean degree.
+The probability of of an OA being "advantageous" is 50\% + ($socre(d)\times 100$) where $score(d)$ is a function that relates degrees
+(x-axis in Figure SI \ref{supp_bias}) to a conservation score (y-axis) $\in \mathbb{R^+}$.
+The OA is "advantageous" with a 100\% probability for any nodes of degree $d$ where $score(d)\geq 0.5$ (grey horizontal line in Figure SI  \ref{supp_bias}).
+$\mu$ = the mean node degree, $N$ = number of nodes in the network, and $\alpha\in \mathbb{R^{+}}$ is a calibration constant. The
+slope of $score(d)$ is inversely proportional to $\alpha$. We arbitrarily chose $\alpha$=0.2 (dotted line in  Figure SI  \ref{supp_bias}).
+Because all nodes in NH are of degree 4 (= the average as well), the OA is always at 50\% chance (coin flip) of being "advantageous" ($score(d)=0$ for
+all nodes).
+
+\begin{figure}[H]
+		\centering
+				\includegraphics[scale=.2]{/09.bias/PNAS/bias_PPI.png}
+				\includegraphics[scale=.2]{/09.bias/PNAS/bias_NH.png}
+				\includegraphics[scale=.2]{/09.bias/PNAS/bias_NL.png}
+				\includegraphics[scale=.2]{/09.bias/PNAS/bias_RN.png}
+				\caption{The likelihood of an "advantageous" advice by the Oracle given a gene's degree. }
+				\label{supp_bias}
+\end{figure}
+%end_custom_content
+\printbibliography
+\end{document}
