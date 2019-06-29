@@ -1,1 +1,0 @@
-bash src/compile.sh tex/main.tex  bib   

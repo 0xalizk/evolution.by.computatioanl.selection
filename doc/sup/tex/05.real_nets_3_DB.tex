@@ -1,4 +1,4 @@
-\input{/Users/unbaxabl/Downloads/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
+\input{/Volumes/DataHub/Publishing/Papers/Paper_01/NatSysBio/sup/tex/01.preamble.tex}
 %begin_custom_header
 %end_custom_header
 \begin{document}
@@ -6,7 +6,7 @@
 \newpage
 \subsection{Database-sourced networks}\label{sup_realnets_DB}
 Table \ref{tab:networks_summary_DB} shows details and source references of networks obtained from the  BioGrid database or from multiple databases queried simultaneously through the PSICQUIC web service (raw data and source code available in  \cite{atiia_case-study_2017}).
-All obtained interactions are undirected and unsigned. Interactions in BioGrid networks represent physical interactions which have been validated by at least two studies, except for human and yeast networks in which interactions have been validated by at least 4 and 3 studies, respectively (because of the large number of interactions for these two species, it was still possible to obtain large networks even under this stringent selection criteria). Multiple databases  (excluding BioGrid) were searched programmatically with a Molecular Interaction Query Language (MIQL) query through the  PSICQUIC web service interface (source code publicly available in  \cite{atiia_case-study_2017}).
+All obtained interactions are undirected and unsigned and therefore were assigned at random. Interactions in BioGrid networks represent physical interactions which have been validated by at least two studies, except for human and yeast networks in which interactions have been validated by at least 4 and 3 studies, respectively (because of the large number of interactions for these two species, it was still possible to obtain large networks even under this stringent selection criteria). Multiple databases  (excluding BioGrid) were searched programmatically with a Molecular Interaction Query Language (MIQL) query through the  PSICQUIC web service interface (source code publicly available in  \cite{atiia_case-study_2017}).
 The query specifies interactions where both interactors (1) are from the same species,  (2) they interact physically, and (3) the interaction has been experimentally detected.
 It should be noted that some PSICQUIC interactions did distinguish whether an interactor is an isoform of a well-known gene. Figure SI \ref{fig:deg_dist_DB} shows the degree distribution of the resulting networks and their corresponding synthetic analogs. The Plant-PSICQUIC network is anomalous in its degree distribution, indicating sporadic coverage of its reported interactions. Other networks of even smaller size still exhibit the mLmH property, which can be a sign that the underlying studies behind them were less sporadic in their coverage (i.e. focusing on specific functional units).
 
@@ -25,7 +25,7 @@ It should be noted that some PSICQUIC interactions did distinguish whether an in
                         %\\[.05cm] \cline{2-7}
                         %\multirow{9}{*}{\textbf{\normalsize DB-sourced}} & Human-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 3436      & 8254      & 2.402     & 0.416
                             \\[.05cm] \cline{2-7}
-                                    & Plant-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 1565      & 2745      & no & no %& 1.754     & 0.57
+                                    & Plant-BioGrid  \cite{chatr-aryamontri_biogrid_2017}  & 1565      & 2745   & 1.754   & no & no %     & 0.57
                             \\[.05cm] \cline{2-7}
                                    & Plant-PSICQUIC  \cite{aranda_psicquic_2011}         & 230       & 789       & 3.43   & no & no   % & 0.292
                             \\[.05cm] \cline{2-7}

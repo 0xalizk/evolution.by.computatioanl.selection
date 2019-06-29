@@ -1,4 +1,9 @@
-# Curated list of background literature references:
+# To compile:
+
+`bash src/compile.sh tex/main.tex  bib`
+
+
+# Related publications: 
 
 
 Atiia, A. A. (2017). *The Computational Weight of Biological Processes* (Doctoral dissertation, McGill University).

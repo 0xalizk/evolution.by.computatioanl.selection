@@ -3,7 +3,8 @@
 # usage: bash src/pnas_compile.sh tex/main.tex bib , the 'bib' is optional, include it if you want bibliography to be rebuilt
 
 rm -rf $(biber --cache)
-rm .build/*
+rm -rf .build
+mkdir .build
 cp $1 .build/
 cp sty/* .build/
 cd .build
