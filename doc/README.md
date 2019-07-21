@@ -2,6 +2,7 @@
 
 `bash src/compile.sh tex/main.tex  bib`
 
+Requires: texlive 2016+ 
 
 # Related publications: 
 
