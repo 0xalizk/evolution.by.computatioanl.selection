@@ -1,0 +1,3 @@
+prediction: other networks and why n2e universal
+predicting literature based (Lit-BM-13) vs experimental (Human)
+TD and ETD for bin: hubs contribute more to damage
