@@ -1,0 +1,5 @@
+==================== absolute ====================
+'Bacteria':         [0.37, 1.5]    accuracy = 87.0596661592
+root says: done, all processes have terminated. Goodbye!
+
+
